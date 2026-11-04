@@ -1,0 +1,197 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Inter-Bold.otf",
+      "sha1": "c376b59a48facc029b9a384cc86f02992b2171ea"
+    },
+    {
+      "path": "src/assets/fonts/Inter-Regular.otf",
+      "sha1": "efd846697930d88ab013b64d4e0f2129cd7e971f"
+    },
+    {
+      "path": "src/assets/fonts/UbuntuSans-Medium.ttf",
+      "sha1": "b955d61924a88bcadc0a6b7d84752d27d8c3694c"
+    },
+    {
+      "path": "src/assets/fonts/UbuntuSans-Regular.ttf",
+      "sha1": "fd414dc49b31cbfc88ae25153578c1f5ea825309"
+    },
+    {
+      "path": "src/assets/fonts/Sono_Proportional-Regular.ttf",
+      "sha1": "6e9a7078cd67e0ce554bf9d04c84e27bfe459b3f"
+    },
+    {
+      "path": "src/assets/fonts/Inter-SemiBoldItalic.otf",
+      "sha1": "7b1e47b951753a7ae241b7f6b05c9e9f41f0fced"
+    },
+    {
+      "path": "src/assets/fonts/UbuntuSans-LightItalic.ttf",
+      "sha1": "2bd8abc3a475977b41737ba6e5836949f1f4af4e"
+    },
+    {
+      "path": "src/assets/fonts/Sono-SemiBold.ttf",
+      "sha1": "242d591936e52a8924b93832d93495f8db2d18ed"
+    },
+    {
+      "path": "src/assets/fonts/Sono-Medium.ttf",
+      "sha1": "62fed109a92aa5fc5b506c3a774e889b53f14da8"
+    },
+    {
+      "path": "src/assets/fonts/Sono_Proportional-Light.ttf",
+      "sha1": "6f06a9909d4819bca3ca8c02b3200a7812de954a"
+    },
+    {
+      "path": "src/assets/fonts/UbuntuSans-ExtraBoldItalic.ttf",
+      "sha1": "9018091fda37c65368a33df1955c26d2a891142b"
+    },
+    {
+      "path": "src/assets/fonts/Sono-Bold.ttf",
+      "sha1": "5d088eb0bee37a180394ac3414a4d668ac82ea32"
+    },
+    {
+      "path": "src/assets/fonts/Inter-Medium.otf",
+      "sha1": "699375c590a1879bde1b53a7949b2659292ee3b0"
+    },
+    {
+      "path": "src/assets/fonts/UbuntuSans-SemiBoldItalic.ttf",
+      "sha1": "a71c5b7f1170854867b329a130b7a62799438307"
+    },
+    {
+      "path": "src/assets/fonts/Sono_Proportional-Medium.ttf",
+      "sha1": "f8df1b21a783eaf428a297d3ba6a472244f88099"
+    },
+    {
+      "path": "src/assets/fonts/Sono-Regular.ttf",
+      "sha1": "65c0703c94d5fac15c9dafc729c760898ba6319b"
+    },
+    {
+      "path": "src/assets/fonts/Inter-Thin-BETA.otf",
+      "sha1": "352e52b71c4a96eff8acddfa30625f6ea13d0dde"
+    },
+    {
+      "path": "src/assets/fonts/UbuntuSans-ThinItalic.ttf",
+      "sha1": "3e32a147711203a1c7a92cae5115b09e3888a592"
+    },
+    {
+      "path": "src/assets/fonts/Sono-ExtraLight.ttf",
+      "sha1": "d4428a90ac3bf1e36e7f06936b2f24ea50f4b237"
+    },
+    {
+      "path": "src/assets/fonts/Inter-ExtraLight-BETA.otf",
+      "sha1": "475fb0d042b74667d43ceadd8d05edfab38b01f5"
+    },
+    {
+      "path": "src/assets/fonts/Inter-Light-BETA.otf",
+      "sha1": "4e0d5eda5045cbcbac16dd03920232a84ef07053"
+    },
+    {
+      "path": "src/assets/fonts/Sono_Proportional-ExtraLight.ttf",
+      "sha1": "a1d17a1df3f79979e6121df3c61b22d687729343"
+    },
+    {
+      "path": "src/assets/fonts/Inter-ExtraLightItalic-BETA.otf",
+      "sha1": "4e768f410f340a7d35018396882e821412d9d087"
+    },
+    {
+      "path": "src/assets/fonts/UbuntuSans-ExtraLight.ttf",
+      "sha1": "0bef08a154bf4ae81bbfd06b9e6e88591e9047b3"
+    },
+    {
+      "path": "src/assets/fonts/UbuntuSans-ExtraLightItalic.ttf",
+      "sha1": "728515f6b88b80a46fea6004c4f803f5e26da3bf"
+    },
+    {
+      "path": "src/assets/fonts/UbuntuSans-SemiBold.ttf",
+      "sha1": "db2fff026cfe85ff655a1c9f9adc2cf003aa724c"
+    },
+    {
+      "path": "src/assets/fonts/Inter-SemiBold.otf",
+      "sha1": "ff17bae635a4bffbaa773aa18ef3cfd8d6f41a17"
+    },
+    {
+      "path": "src/assets/fonts/Inter-BlackItalic.otf",
+      "sha1": "cf06030ff6708282c674fb6047b9723b127c41e9"
+    },
+    {
+      "path": "src/assets/fonts/UbuntuSans-BoldItalic.ttf",
+      "sha1": "caafd7bcb2203aa12bc0452a12a8b3b72b730a16"
+    },
+    {
+      "path": "src/assets/fonts/Sono-ExtraBold.ttf",
+      "sha1": "3d56bd8339a1227ef6b932a8113e5ff661ddbf60"
+    },
+    {
+      "path": "src/assets/fonts/Sono_Proportional-ExtraBold.ttf",
+      "sha1": "6ceac4049a7edaa529a1b64ea182c72de327f739"
+    },
+    {
+      "path": "src/assets/fonts/Inter-MediumItalic.otf",
+      "sha1": "4ed021c1f5d9af1b5600770082e1d9d8b47cf38c"
+    },
+    {
+      "path": "src/assets/fonts/Sono-Light.ttf",
+      "sha1": "be67dcaf35f039c0b26f24cfadf5e0856715bbfd"
+    },
+    {
+      "path": "src/assets/fonts/UbuntuSans-Light.ttf",
+      "sha1": "c776d1d32934b8aa9e935498f7e1298c443faf99"
+    },
+    {
+      "path": "src/assets/fonts/Inter-Black.otf",
+      "sha1": "68c456410eebd937a6496fff66d71311c8e844f7"
+    },
+    {
+      "path": "src/assets/fonts/Sono_Proportional-SemiBold.ttf",
+      "sha1": "d8f00b6adc49e57d6c580af58ebf93d2a541b467"
+    },
+    {
+      "path": "src/assets/fonts/Inter-Italic.otf",
+      "sha1": "38db56ca1d9e726b5c6db786a8c53010e252c9f5"
+    },
+    {
+      "path": "src/assets/fonts/Sono_Proportional-Bold.ttf",
+      "sha1": "aac80f503d1df6cf7afe59a287a12eb1e841efb8"
+    },
+    {
+      "path": "src/assets/fonts/Inter-ExtraBold.otf",
+      "sha1": "2c724cc7236610e53e2060fd57b86c410889538d"
+    },
+    {
+      "path": "src/assets/fonts/Inter-LightItalic-BETA.otf",
+      "sha1": "d49756fdb028a473e127d4b4fe0af7fb7b8b4d65"
+    },
+    {
+      "path": "src/assets/fonts/UbuntuSans-ExtraBold.ttf",
+      "sha1": "8ee7bbf4ca04a6cce670f37d2c827ea2b3fb1929"
+    },
+    {
+      "path": "src/assets/fonts/Inter-ExtraBoldItalic.otf",
+      "sha1": "ca9b0143218b83936b50c8990da23c5c1cf009bf"
+    },
+    {
+      "path": "src/assets/fonts/Inter-BoldItalic.otf",
+      "sha1": "e565afbf6c3c06bb50da31475f98784cf391e9a8"
+    },
+    {
+      "path": "src/assets/fonts/UbuntuSans-Thin.ttf",
+      "sha1": "0fd8b02da7d7b7d263c7dd39adfba101d4776e4e"
+    },
+    {
+      "path": "src/assets/fonts/UbuntuSans-Bold.ttf",
+      "sha1": "686264d0703e99cd1e14b77ec2d6962cbf3b0ebd"
+    },
+    {
+      "path": "src/assets/fonts/Inter-ThinItalic-BETA.otf",
+      "sha1": "90e9ca831b887bb67b1aa612511ce5bcc918df0b"
+    },
+    {
+      "path": "src/assets/fonts/UbuntuSans-MediumItalic.ttf",
+      "sha1": "64df432b5d11c0f414b2447c502c527015026546"
+    },
+    {
+      "path": "src/assets/fonts/UbuntuSans-Italic.ttf",
+      "sha1": "e48ad9259c558cddbc8b4bda2affaedc7233b21c"
+    }
+  ]
+}

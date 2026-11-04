@@ -1,0 +1,99 @@
+platform :ios, '15.5'
+ENV['ENVFILE'] = '../.env'
+
+
+def node_require(script)
+   require Pod::Executable.execute_command('node', ['-p',
+     "require.resolve(
+       '#{script}',
+      {paths: [process.argv[1]]},
+    )", __dir__]).strip
+end
+
+node_require('react-native/scripts/react_native_pods.rb')
+node_require('react-native-permissions/scripts/setup.rb')
+
+setup_permissions([
+  'Camera',
+  'LocationWhenInUse',
+  'MediaLibrary',
+  'Notifications',
+  'PhotoLibrary',
+])
+
+prepare_react_native_project!
+
+use_frameworks! :linkage => :dynamic
+pre_install do |installer|
+  static_pods = ['GoogleMaps', 'GoogleMapsBase', 'GoogleMapsCore', 'Google-Maps-iOS-Utils', 'react-native-maps']
+
+  installer.pod_targets.each do |pod|
+    if static_pods.include?(pod.name)
+      def pod.build_type
+        Pod::BuildType.static_library
+      end
+    end
+  end
+end
+
+$RNFirebaseDisableSPM = true
+
+target 'govgrids' do
+  config = use_native_modules!
+
+  use_react_native!(
+    :path => config[:reactNativePath],
+    :hermes_enabled => true,
+    :app_path => "#{Pod::Config.instance.installation_root}/.."
+  )
+
+
+
+  rn_maps_path = '../node_modules/react-native-maps'
+  pod 'react-native-maps/Google', :path => rn_maps_path
+
+  
+  post_install do |installer|
+    react_native_post_install(
+      installer,
+      config[:reactNativePath],
+      :mac_catalyst_enabled => false,
+    )
+      
+     installer.pods_project.targets.each do |target|
+    next unless ['RNCClipboard', 'react-native-image-picker'].include?(target.name)
+
+    target.build_configurations.each do |build_config|
+      flags = build_config.build_settings['OTHER_LDFLAGS'] || ['$(inherited)']
+      flags = flags.split if flags.is_a?(String)
+
+      unless flags.each_slice(2).any? { |pair| pair == ['-framework', 'MobileCoreServices'] }
+        flags += ['-framework', 'MobileCoreServices']
+      end
+
+      build_config.build_settings['OTHER_LDFLAGS'] = flags
+    end
+end
+
+    # ✅ Fix 1: Allow non-modular includes across all pods
+    # installer.pods_project.targets.each do |target|
+    #   target.build_configurations.each do |config|
+    #     config.build_settings['DEFINES_MODULE'] = 'YES'
+    #     config.build_settings['ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
+    #   end
+    # end
+   installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['DEFINES_MODULE'] = 'YES'
+        config.build_settings['ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
+
+        current = config.build_settings['IPHONEOS_DEPLOYMENT_TARGET']
+        if current.nil? || current.to_f < 15.0
+          config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
+        end
+      end
+    end
+
+
+  end
+end

@@ -1,0 +1,78 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-error.log
+yarn-debug.log*
+
+# React Native
+ios/Pods/
+*.xcuserdata/
+*.xcuserstate
+*.lock
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+app-release.apk
+patches
+
+# Temporary files and folders
+*.tmp
+*.temp
+*.swp
+*.swo
+*.cxx
+android/app/.cxx/
+*.o
+*.aab
+*.apk
+
+# Editor/IDE specific
+.vscode/
+.idea/
+*.iml
+
+/ios/build
+# Logs
+logs
+*.log
+*.log.*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Test outputs
+/coverage/
+*.lcov
+jest-test-results.json
+
+# Bundler output
+/build/
+/dist/
+/index.android.bundle
+/index.ios.bundle
+*.bundle.map
+
+# Expo
+.expo/
+.expo-shared/
+
+# Firebase
+google-services.json
+GoogleService-Info.plist
+
+# Environment files
+.env
+.env.*
+android/app/release/app-release.apk
+*.apk
+ios/.xcode.env.local
+ios/.xcode.env.local
+android/app/release/baselineProfiles/1/app-release.dm
+android/app/release/baselineProfiles/0/app-release.dm
+ios/.xcode.env.local
+# /patches
+# /patches
+# patches/react-native-screens+4.24.0.patch

@@ -1,0 +1,34 @@
+current directory: /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/json-2.7.6/ext/json/ext/parser
+/Users/ictgemobile/.rbenv/versions/3.3.6/bin/ruby extconf.rb
+checking for rb_enc_raise() in ruby.h... yes
+checking for rb_enc_interned_str() in ruby.h... yes
+checking for whether -std=c99 is accepted as CFLAGS... no
+creating Makefile
+
+current directory: /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/json-2.7.6/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20261012-39540-kx9uyc sitelibdir\=./.gem.20261012-39540-kx9uyc clean
+
+current directory: /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/json-2.7.6/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20261012-39540-kx9uyc sitelibdir\=./.gem.20261012-39540-kx9uyc
+compiling parser.c
+In file included from parser.rl:1:
+In file included from ./../fbuffer/fbuffer.h:4:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+linking shared-object json/ext/parser.bundle
+
+current directory: /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/json-2.7.6/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20261012-39540-kx9uyc sitelibdir\=./.gem.20261012-39540-kx9uyc install
+/usr/bin/install -c -m 0755 parser.bundle ./.gem.20261012-39540-kx9uyc/json/ext
+
+current directory: /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/json-2.7.6/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20261012-39540-kx9uyc sitelibdir\=./.gem.20261012-39540-kx9uyc clean

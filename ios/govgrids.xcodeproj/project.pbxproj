@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0126E065E6AA4DC6B8D68CB3 /* Sono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 51E48FBC42AE4F1FAFF582C0 /* Sono-Regular.ttf */; };
+		0182BEAD0A7E4DE098BE41B9 /* Inter-ExtraBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 766EB8F25CD6458897F6D3A6 /* Inter-ExtraBoldItalic.otf */; };
+		05EAC27612C94772B85C01C5 /* Sono-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7C9DB9B096B4EE2AFA8272E /* Sono-SemiBold.ttf */; };
+		06D3EE79C997444A82DA18B7 /* Sono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42F1E6490EC54599A111EA2A /* Sono-Medium.ttf */; };
+		0A3AEA47926848D882D39D75 /* Inter-Thin-BETA.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75CF231B8B614161B3A84A71 /* Inter-Thin-BETA.otf */; };
+		0D436A59A1A44806903CE867 /* Inter-Light-BETA.otf in Resources */ = {isa = PBXBuildFile; fileRef = 491D1E2AA8324E54AD585A22 /* Inter-Light-BETA.otf */; };
+		0F9E8ABD88FB423DA5FAF044 /* UbuntuSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 999CFB87AA084387A5704A17 /* UbuntuSans-Thin.ttf */; };
+		0FC96AB58F7C4B4E9C6B2DB2 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3489BE3C14B4F1E96782160 /* BootSplash.storyboard */; };
+		146CCD8191184732ADABDE34 /* UbuntuSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8C864C22A3E4E07B01F2AA4 /* UbuntuSans-Light.ttf */; };
+		22A8BA7BDAE149D0956256E9 /* UbuntuSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96D4F891E64542ECB6FA3A08 /* UbuntuSans-Italic.ttf */; };
+		278493B33FC74BE0B2E663D3 /* Inter-ThinItalic-BETA.otf in Resources */ = {isa = PBXBuildFile; fileRef = 31B16556B8FF4F7BAB7282B2 /* Inter-ThinItalic-BETA.otf */; };
+		2C01F43D6C03444EA1011FFE /* Sono_Proportional-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F43B01B5C8574C989F24BFC1 /* Sono_Proportional-SemiBold.ttf */; };
+		35B5492D0D814629838E7A83 /* UbuntuSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C77DBF41C694AEB8CD9FAA1 /* UbuntuSans-ThinItalic.ttf */; };
+		37AE4F44826B42D4BC22EB9F /* UbuntuSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86C184DFA23C4BF7861ED395 /* UbuntuSans-SemiBoldItalic.ttf */; };
+		3A67C618EB384240B66F86F8 /* Sono-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E18A2EEE6D90473993AE11B0 /* Sono-ExtraLight.ttf */; };
+		43E8684D5E4147B3933E1468 /* Inter-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F5940796FB6C400099247871 /* Inter-SemiBoldItalic.otf */; };
+		45CC95409C284A61B0A60EE6 /* UbuntuSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 119CF799E94D40D5831D027F /* UbuntuSans-ExtraLightItalic.ttf */; };
+		4801F00BD67C4F4F998DA065 /* UbuntuSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8065D8BF9C9349BE94B04A04 /* UbuntuSans-MediumItalic.ttf */; };
+		48C9A8ECF8C74D7DA4881C88 /* UbuntuSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC8D33471EC94303A7082C3D /* UbuntuSans-ExtraLight.ttf */; };
+		4E082F9635EB42A1B2F22576 /* UbuntuSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0507DE0EE2740EBA736A045 /* UbuntuSans-ExtraBold.ttf */; };
+		4ED14B2285F74C4EA778C8D3 /* UbuntuSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE58F1A76A824602AB9A7273 /* UbuntuSans-ExtraBoldItalic.ttf */; };
+		51281BD20D2143C28251543B /* UbuntuSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00BF19398C4D433681786DB6 /* UbuntuSans-Medium.ttf */; };
+		513CCE183B324B1792FA47F3 /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1259569EAFC84E4F82A76239 /* Inter-Regular.otf */; };
+		6D89471BB1A446C5A9D204DC /* Inter-ExtraLight-BETA.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3846DD8560314B1596F7A776 /* Inter-ExtraLight-BETA.otf */; };
+		72F83CDF4C7344A792BCDE62 /* UbuntuSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C552A062F3DD4D27A7771FA2 /* UbuntuSans-BoldItalic.ttf */; };
+		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
+		768DFD7A14314DAFBABCD90E /* Inter-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 513BE4EC2B2942FA8840F651 /* Inter-ExtraBold.otf */; };
+		78BCF38E2BC146E1B1FC8C5C /* Sono_Proportional-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF60E9F3A42E49109474156A /* Sono_Proportional-Light.ttf */; };
+		78C996E770C449AC847F9AAD /* Inter-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3504B0E4C9EF434AB1915B0F /* Inter-MediumItalic.otf */; };
+		79F888A6E8974E879C0E070E /* Inter-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A6991D8A47643BDB11F1898 /* Inter-Bold.otf */; };
+		7D177A19BED249748E21E1DB /* Inter-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75C206FEF98D418881567357 /* Inter-Black.otf */; };
+		828D1774AD4B4A9F9574CF88 /* Sono_Proportional-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49E0249789314754B4076A6C /* Sono_Proportional-Medium.ttf */; };
+		8A6B10C52C0440119B1284B6 /* Inter-LightItalic-BETA.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8A7FF1EA63A94E5E9EF88DF8 /* Inter-LightItalic-BETA.otf */; };
+		A93FFE8DC9294DCDB8F296A8 /* Inter-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07A59855E037412F8ED397F4 /* Inter-BoldItalic.otf */; };
+		AD6B6014307DCDC1008DCCB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B6013307DCDC1008DCCB3 /* SceneDelegate.swift */; };
+		ADA2B4A02F31602E005CBC01 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADA2B49F2F31602E005CBC01 /* GoogleService-Info.plist */; };
+		ADA2B4A42F3160EA005CBC01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA2B4A32F3160EA005CBC01 /* LaunchScreen.storyboard */; };
+		ADA2B4A82F31610A005CBC01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA2B4A72F31610A005CBC01 /* Images.xcassets */; };
+		B4E728A7573C4A25B7F0CF17 /* Sono-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1585802A0FCA4CB988645EAC /* Sono-ExtraBold.ttf */; };
+		B73A457AC02F4EA1B094480D /* Inter-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92261A2CFDB24DE5B2C528FC /* Inter-Italic.otf */; };
+		CBCE2719FB17409481FB4C5D /* Inter-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CF51F5B252E94DFEA9A0EFE6 /* Inter-BlackItalic.otf */; };
+		CC12BF7D4EDA4E89BEE2370F /* Sono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F111E123C73447E2B9E6C9D9 /* Sono-Bold.ttf */; };
+		CF518E8EA1054C04A26F5E16 /* Inter-ExtraLightItalic-BETA.otf in Resources */ = {isa = PBXBuildFile; fileRef = D07B6B53A2F14696A8736CAE /* Inter-ExtraLightItalic-BETA.otf */; };
+		D21836503F274503B180F699 /* Sono_Proportional-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4297EC2642D4993BF968D7E /* Sono_Proportional-ExtraLight.ttf */; };
+		D4BE8DB042D04939B05DD2DC /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 075FD305EABF4A4E942F7204 /* Inter-SemiBold.otf */; };
+		D62CC180AAAE4B9780E58676 /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1396344BE8A4667B75E90DB /* Inter-Medium.otf */; };
+		D741D51C06B546D1B59E2FD3 /* Sono_Proportional-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A65884C4BF0482E95098AE4 /* Sono_Proportional-Bold.ttf */; };
+		DA951CFD1BD840A0A8810D6C /* UbuntuSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AD1D8156F614E1EA01068C3 /* UbuntuSans-Bold.ttf */; };
+		DFC0154AC04C8DE76C1C171C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		E5CC0CA8BA2744DAB7E72505 /* Sono-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90D4CA10AC33497ABA9878B8 /* Sono-Light.ttf */; };
+		E6671D38E8244493BBC56D79 /* Sono_Proportional-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D83B686D868E4A6F9EDB737C /* Sono_Proportional-Regular.ttf */; };
+		EEA823729D0C4A34B9700DBD /* UbuntuSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCAF560949144A0DAC30B5EA /* UbuntuSans-LightItalic.ttf */; };
+		EF9F5F28893C441395EC569F /* UbuntuSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A1FFA4971214346AF6515BD /* UbuntuSans-SemiBold.ttf */; };
+		F0F363B629074F3B940A8DDC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E145B5D81C024645B433416A /* Colors.xcassets */; };
+		F411BE5127794A91B0B76996 /* UbuntuSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AA17B0CAB9847948EF70267 /* UbuntuSans-Regular.ttf */; };
+		F6BCF0791F93268E759121C3 /* Pods_govgrids.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B47418C82A5F43D027D72 /* Pods_govgrids.framework */; };
+		F79384B28A0D4B048EE227DA /* Sono_Proportional-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47CC16B473394DA781C58D29 /* Sono_Proportional-ExtraBold.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00BF19398C4D433681786DB6 /* UbuntuSans-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "UbuntuSans-Medium.ttf"; path = "../src/assets/fonts/UbuntuSans-Medium.ttf"; sourceTree = "<group>"; };
+		04AA6AA019EDEA719A91FA71 /* Pods-govgrids.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-govgrids.debug.xcconfig"; path = "Target Support Files/Pods-govgrids/Pods-govgrids.debug.xcconfig"; sourceTree = "<group>"; };
+		075FD305EABF4A4E942F7204 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-SemiBold.otf"; path = "../src/assets/fonts/Inter-SemiBold.otf"; sourceTree = "<group>"; };
+		07A59855E037412F8ED397F4 /* Inter-BoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-BoldItalic.otf"; path = "../src/assets/fonts/Inter-BoldItalic.otf"; sourceTree = "<group>"; };
+		0AA17B0CAB9847948EF70267 /* UbuntuSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "UbuntuSans-Regular.ttf"; path = "../src/assets/fonts/UbuntuSans-Regular.ttf"; sourceTree = "<group>"; };
+		119CF799E94D40D5831D027F /* UbuntuSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "UbuntuSans-ExtraLightItalic.ttf"; path = "../src/assets/fonts/UbuntuSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		1259569EAFC84E4F82A76239 /* Inter-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Regular.otf"; path = "../src/assets/fonts/Inter-Regular.otf"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* govgrids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = govgrids.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = govgrids/Info.plist; sourceTree = "<group>"; };
+		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = govgrids/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		1585802A0FCA4CB988645EAC /* Sono-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Sono-ExtraBold.ttf"; path = "../src/assets/fonts/Sono-ExtraBold.ttf"; sourceTree = "<group>"; };
+		2A1FFA4971214346AF6515BD /* UbuntuSans-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "UbuntuSans-SemiBold.ttf"; path = "../src/assets/fonts/UbuntuSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		31B16556B8FF4F7BAB7282B2 /* Inter-ThinItalic-BETA.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-ThinItalic-BETA.otf"; path = "../src/assets/fonts/Inter-ThinItalic-BETA.otf"; sourceTree = "<group>"; };
+		3504B0E4C9EF434AB1915B0F /* Inter-MediumItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-MediumItalic.otf"; path = "../src/assets/fonts/Inter-MediumItalic.otf"; sourceTree = "<group>"; };
+		3846DD8560314B1596F7A776 /* Inter-ExtraLight-BETA.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-ExtraLight-BETA.otf"; path = "../src/assets/fonts/Inter-ExtraLight-BETA.otf"; sourceTree = "<group>"; };
+		3A65884C4BF0482E95098AE4 /* Sono_Proportional-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Sono_Proportional-Bold.ttf"; path = "../src/assets/fonts/Sono_Proportional-Bold.ttf"; sourceTree = "<group>"; };
+		3C77DBF41C694AEB8CD9FAA1 /* UbuntuSans-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "UbuntuSans-ThinItalic.ttf"; path = "../src/assets/fonts/UbuntuSans-ThinItalic.ttf"; sourceTree = "<group>"; };
+		42F1E6490EC54599A111EA2A /* Sono-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Sono-Medium.ttf"; path = "../src/assets/fonts/Sono-Medium.ttf"; sourceTree = "<group>"; };
+		47CC16B473394DA781C58D29 /* Sono_Proportional-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Sono_Proportional-ExtraBold.ttf"; path = "../src/assets/fonts/Sono_Proportional-ExtraBold.ttf"; sourceTree = "<group>"; };
+		491D1E2AA8324E54AD585A22 /* Inter-Light-BETA.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Light-BETA.otf"; path = "../src/assets/fonts/Inter-Light-BETA.otf"; sourceTree = "<group>"; };
+		49E0249789314754B4076A6C /* Sono_Proportional-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Sono_Proportional-Medium.ttf"; path = "../src/assets/fonts/Sono_Proportional-Medium.ttf"; sourceTree = "<group>"; };
+		513BE4EC2B2942FA8840F651 /* Inter-ExtraBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-ExtraBold.otf"; path = "../src/assets/fonts/Inter-ExtraBold.otf"; sourceTree = "<group>"; };
+		51E48FBC42AE4F1FAFF582C0 /* Sono-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Sono-Regular.ttf"; path = "../src/assets/fonts/Sono-Regular.ttf"; sourceTree = "<group>"; };
+		5AD1D8156F614E1EA01068C3 /* UbuntuSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "UbuntuSans-Bold.ttf"; path = "../src/assets/fonts/UbuntuSans-Bold.ttf"; sourceTree = "<group>"; };
+		6525932AAFDB295A13BBD165 /* Pods-govgrids.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-govgrids.release.xcconfig"; path = "Target Support Files/Pods-govgrids/Pods-govgrids.release.xcconfig"; sourceTree = "<group>"; };
+		6E2B47418C82A5F43D027D72 /* Pods_govgrids.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_govgrids.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75C206FEF98D418881567357 /* Inter-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Black.otf"; path = "../src/assets/fonts/Inter-Black.otf"; sourceTree = "<group>"; };
+		75CF231B8B614161B3A84A71 /* Inter-Thin-BETA.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Thin-BETA.otf"; path = "../src/assets/fonts/Inter-Thin-BETA.otf"; sourceTree = "<group>"; };
+		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = govgrids/AppDelegate.swift; sourceTree = "<group>"; };
+		766EB8F25CD6458897F6D3A6 /* Inter-ExtraBoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-ExtraBoldItalic.otf"; path = "../src/assets/fonts/Inter-ExtraBoldItalic.otf"; sourceTree = "<group>"; };
+		8065D8BF9C9349BE94B04A04 /* UbuntuSans-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "UbuntuSans-MediumItalic.ttf"; path = "../src/assets/fonts/UbuntuSans-MediumItalic.ttf"; sourceTree = "<group>"; };
+		86C184DFA23C4BF7861ED395 /* UbuntuSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "UbuntuSans-SemiBoldItalic.ttf"; path = "../src/assets/fonts/UbuntuSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		8A7FF1EA63A94E5E9EF88DF8 /* Inter-LightItalic-BETA.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-LightItalic-BETA.otf"; path = "../src/assets/fonts/Inter-LightItalic-BETA.otf"; sourceTree = "<group>"; };
+		90D4CA10AC33497ABA9878B8 /* Sono-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Sono-Light.ttf"; path = "../src/assets/fonts/Sono-Light.ttf"; sourceTree = "<group>"; };
+		92261A2CFDB24DE5B2C528FC /* Inter-Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Italic.otf"; path = "../src/assets/fonts/Inter-Italic.otf"; sourceTree = "<group>"; };
+		96D4F891E64542ECB6FA3A08 /* UbuntuSans-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "UbuntuSans-Italic.ttf"; path = "../src/assets/fonts/UbuntuSans-Italic.ttf"; sourceTree = "<group>"; };
+		999CFB87AA084387A5704A17 /* UbuntuSans-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "UbuntuSans-Thin.ttf"; path = "../src/assets/fonts/UbuntuSans-Thin.ttf"; sourceTree = "<group>"; };
+		9A6991D8A47643BDB11F1898 /* Inter-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Bold.otf"; path = "../src/assets/fonts/Inter-Bold.otf"; sourceTree = "<group>"; };
+		AD6B6013307DCDC1008DCCB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AD6EED4D2F3BE81100D7CC73 /* govgrids.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = govgrids.entitlements; path = govgrids/govgrids.entitlements; sourceTree = "<group>"; };
+		ADA2B49F2F31602E005CBC01 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ADA2B4A32F3160EA005CBC01 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = govgrids/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADA2B4A72F31610A005CBC01 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = govgrids/Images.xcassets; sourceTree = "<group>"; };
+		ADA95AB22F480B430086C412 /* govgrids-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "govgrids-Bridging-Header.h"; sourceTree = "<group>"; };
+		B8C864C22A3E4E07B01F2AA4 /* UbuntuSans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "UbuntuSans-Light.ttf"; path = "../src/assets/fonts/UbuntuSans-Light.ttf"; sourceTree = "<group>"; };
+		BC8D33471EC94303A7082C3D /* UbuntuSans-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "UbuntuSans-ExtraLight.ttf"; path = "../src/assets/fonts/UbuntuSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		C552A062F3DD4D27A7771FA2 /* UbuntuSans-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "UbuntuSans-BoldItalic.ttf"; path = "../src/assets/fonts/UbuntuSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		CCAF560949144A0DAC30B5EA /* UbuntuSans-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "UbuntuSans-LightItalic.ttf"; path = "../src/assets/fonts/UbuntuSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		CF51F5B252E94DFEA9A0EFE6 /* Inter-BlackItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-BlackItalic.otf"; path = "../src/assets/fonts/Inter-BlackItalic.otf"; sourceTree = "<group>"; };
+		CF60E9F3A42E49109474156A /* Sono_Proportional-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Sono_Proportional-Light.ttf"; path = "../src/assets/fonts/Sono_Proportional-Light.ttf"; sourceTree = "<group>"; };
+		D07B6B53A2F14696A8736CAE /* Inter-ExtraLightItalic-BETA.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-ExtraLightItalic-BETA.otf"; path = "../src/assets/fonts/Inter-ExtraLightItalic-BETA.otf"; sourceTree = "<group>"; };
+		D1396344BE8A4667B75E90DB /* Inter-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Medium.otf"; path = "../src/assets/fonts/Inter-Medium.otf"; sourceTree = "<group>"; };
+		D3489BE3C14B4F1E96782160 /* BootSplash.storyboard */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 529881422473; includeInIndex = 0; lastKnownFileType = unknown; name = BootSplash.storyboard; path = govgrids/BootSplash.storyboard; sourceTree = "<group>"; };
+		D83B686D868E4A6F9EDB737C /* Sono_Proportional-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Sono_Proportional-Regular.ttf"; path = "../src/assets/fonts/Sono_Proportional-Regular.ttf"; sourceTree = "<group>"; };
+		E0507DE0EE2740EBA736A045 /* UbuntuSans-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "UbuntuSans-ExtraBold.ttf"; path = "../src/assets/fonts/UbuntuSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		E145B5D81C024645B433416A /* Colors.xcassets */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 529881422473; includeInIndex = 0; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = govgrids/Colors.xcassets; sourceTree = "<group>"; };
+		E18A2EEE6D90473993AE11B0 /* Sono-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Sono-ExtraLight.ttf"; path = "../src/assets/fonts/Sono-ExtraLight.ttf"; sourceTree = "<group>"; };
+		E7C9DB9B096B4EE2AFA8272E /* Sono-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Sono-SemiBold.ttf"; path = "../src/assets/fonts/Sono-SemiBold.ttf"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F111E123C73447E2B9E6C9D9 /* Sono-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Sono-Bold.ttf"; path = "../src/assets/fonts/Sono-Bold.ttf"; sourceTree = "<group>"; };
+		F4297EC2642D4993BF968D7E /* Sono_Proportional-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Sono_Proportional-ExtraLight.ttf"; path = "../src/assets/fonts/Sono_Proportional-ExtraLight.ttf"; sourceTree = "<group>"; };
+		F43B01B5C8574C989F24BFC1 /* Sono_Proportional-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Sono_Proportional-SemiBold.ttf"; path = "../src/assets/fonts/Sono_Proportional-SemiBold.ttf"; sourceTree = "<group>"; };
+		F5940796FB6C400099247871 /* Inter-SemiBoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-SemiBoldItalic.otf"; path = "../src/assets/fonts/Inter-SemiBoldItalic.otf"; sourceTree = "<group>"; };
+		FE58F1A76A824602AB9A7273 /* UbuntuSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "UbuntuSans-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/UbuntuSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6BCF0791F93268E759121C3 /* Pods_govgrids.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13B07FAE1A68108700A75B9A /* govgrids */ = {
+			isa = PBXGroup;
+			children = (
+				AD6EED4D2F3BE81100D7CC73 /* govgrids.entitlements */,
+				761780EC2CA45674006654EE /* AppDelegate.swift */,
+				AD6B6013307DCDC1008DCCB3 /* SceneDelegate.swift */,
+				ADA2B4A72F31610A005CBC01 /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				ADA2B4A32F3160EA005CBC01 /* LaunchScreen.storyboard */,
+				D3489BE3C14B4F1E96782160 /* BootSplash.storyboard */,
+				E145B5D81C024645B433416A /* Colors.xcassets */,
+			);
+			name = govgrids;
+			sourceTree = "<group>";
+		};
+		2A47412B0263411F89AC0F48 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9A6991D8A47643BDB11F1898 /* Inter-Bold.otf */,
+				1259569EAFC84E4F82A76239 /* Inter-Regular.otf */,
+				F5940796FB6C400099247871 /* Inter-SemiBoldItalic.otf */,
+				D1396344BE8A4667B75E90DB /* Inter-Medium.otf */,
+				75CF231B8B614161B3A84A71 /* Inter-Thin-BETA.otf */,
+				3846DD8560314B1596F7A776 /* Inter-ExtraLight-BETA.otf */,
+				491D1E2AA8324E54AD585A22 /* Inter-Light-BETA.otf */,
+				D07B6B53A2F14696A8736CAE /* Inter-ExtraLightItalic-BETA.otf */,
+				075FD305EABF4A4E942F7204 /* Inter-SemiBold.otf */,
+				CF51F5B252E94DFEA9A0EFE6 /* Inter-BlackItalic.otf */,
+				3504B0E4C9EF434AB1915B0F /* Inter-MediumItalic.otf */,
+				75C206FEF98D418881567357 /* Inter-Black.otf */,
+				92261A2CFDB24DE5B2C528FC /* Inter-Italic.otf */,
+				513BE4EC2B2942FA8840F651 /* Inter-ExtraBold.otf */,
+				8A7FF1EA63A94E5E9EF88DF8 /* Inter-LightItalic-BETA.otf */,
+				766EB8F25CD6458897F6D3A6 /* Inter-ExtraBoldItalic.otf */,
+				07A59855E037412F8ED397F4 /* Inter-BoldItalic.otf */,
+				31B16556B8FF4F7BAB7282B2 /* Inter-ThinItalic-BETA.otf */,
+				00BF19398C4D433681786DB6 /* UbuntuSans-Medium.ttf */,
+				0AA17B0CAB9847948EF70267 /* UbuntuSans-Regular.ttf */,
+				D83B686D868E4A6F9EDB737C /* Sono_Proportional-Regular.ttf */,
+				CCAF560949144A0DAC30B5EA /* UbuntuSans-LightItalic.ttf */,
+				E7C9DB9B096B4EE2AFA8272E /* Sono-SemiBold.ttf */,
+				42F1E6490EC54599A111EA2A /* Sono-Medium.ttf */,
+				CF60E9F3A42E49109474156A /* Sono_Proportional-Light.ttf */,
+				FE58F1A76A824602AB9A7273 /* UbuntuSans-ExtraBoldItalic.ttf */,
+				F111E123C73447E2B9E6C9D9 /* Sono-Bold.ttf */,
+				86C184DFA23C4BF7861ED395 /* UbuntuSans-SemiBoldItalic.ttf */,
+				49E0249789314754B4076A6C /* Sono_Proportional-Medium.ttf */,
+				51E48FBC42AE4F1FAFF582C0 /* Sono-Regular.ttf */,
+				3C77DBF41C694AEB8CD9FAA1 /* UbuntuSans-ThinItalic.ttf */,
+				E18A2EEE6D90473993AE11B0 /* Sono-ExtraLight.ttf */,
+				F4297EC2642D4993BF968D7E /* Sono_Proportional-ExtraLight.ttf */,
+				BC8D33471EC94303A7082C3D /* UbuntuSans-ExtraLight.ttf */,
+				119CF799E94D40D5831D027F /* UbuntuSans-ExtraLightItalic.ttf */,
+				2A1FFA4971214346AF6515BD /* UbuntuSans-SemiBold.ttf */,
+				C552A062F3DD4D27A7771FA2 /* UbuntuSans-BoldItalic.ttf */,
+				1585802A0FCA4CB988645EAC /* Sono-ExtraBold.ttf */,
+				47CC16B473394DA781C58D29 /* Sono_Proportional-ExtraBold.ttf */,
+				90D4CA10AC33497ABA9878B8 /* Sono-Light.ttf */,
+				B8C864C22A3E4E07B01F2AA4 /* UbuntuSans-Light.ttf */,
+				F43B01B5C8574C989F24BFC1 /* Sono_Proportional-SemiBold.ttf */,
+				3A65884C4BF0482E95098AE4 /* Sono_Proportional-Bold.ttf */,
+				E0507DE0EE2740EBA736A045 /* UbuntuSans-ExtraBold.ttf */,
+				999CFB87AA084387A5704A17 /* UbuntuSans-Thin.ttf */,
+				5AD1D8156F614E1EA01068C3 /* UbuntuSans-Bold.ttf */,
+				8065D8BF9C9349BE94B04A04 /* UbuntuSans-MediumItalic.ttf */,
+				96D4F891E64542ECB6FA3A08 /* UbuntuSans-Italic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				6E2B47418C82A5F43D027D72 /* Pods_govgrids.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				ADA95AB22F480B430086C412 /* govgrids-Bridging-Header.h */,
+				13B07FAE1A68108700A75B9A /* govgrids */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				ADA2B49F2F31602E005CBC01 /* GoogleService-Info.plist */,
+				2A47412B0263411F89AC0F48 /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* govgrids.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04AA6AA019EDEA719A91FA71 /* Pods-govgrids.debug.xcconfig */,
+				6525932AAFDB295A13BBD165 /* Pods-govgrids.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13B07F861A680F5B00A75B9A /* govgrids */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "govgrids" */;
+			buildPhases = (
+				15E400595FDEAA95448FBBA9 /* [CP] Check Pods Manifest.lock */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				521AF8CE6CC98B49F1093FCE /* [CP] Embed Pods Frameworks */,
+				00BBAFA0F5F9E1B9355F492F /* [CP] Copy Pods Resources */,
+				5C3547290150D4BCA572C48D /* [CP-User] [RNFB] Core Configuration */,
+				32F5446103AC2838B0F33B50 /* [stripe-react-native] Embed SPM Frameworks */,
+				30C7B212D2320B3DD90D7371 /* [RNFB] Embed Firebase SPM Frameworks */,
+				87478DC062BD2A6E6F387CD8 /* [RNFB] Remove duplicate Firebase/Google SPM binary xcframework signature files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = govgrids;
+			productName = govgrids;
+			productReference = 13B07F961A680F5B00A75B9A /* govgrids.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "govgrids" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* govgrids */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA2B4A02F31602E005CBC01 /* GoogleService-Info.plist in Resources */,
+				ADA2B4A82F31610A005CBC01 /* Images.xcassets in Resources */,
+				ADA2B4A42F3160EA005CBC01 /* LaunchScreen.storyboard in Resources */,
+				DFC0154AC04C8DE76C1C171C /* PrivacyInfo.xcprivacy in Resources */,
+				79F888A6E8974E879C0E070E /* Inter-Bold.otf in Resources */,
+				513CCE183B324B1792FA47F3 /* Inter-Regular.otf in Resources */,
+				43E8684D5E4147B3933E1468 /* Inter-SemiBoldItalic.otf in Resources */,
+				D62CC180AAAE4B9780E58676 /* Inter-Medium.otf in Resources */,
+				0A3AEA47926848D882D39D75 /* Inter-Thin-BETA.otf in Resources */,
+				6D89471BB1A446C5A9D204DC /* Inter-ExtraLight-BETA.otf in Resources */,
+				0D436A59A1A44806903CE867 /* Inter-Light-BETA.otf in Resources */,
+				CF518E8EA1054C04A26F5E16 /* Inter-ExtraLightItalic-BETA.otf in Resources */,
+				D4BE8DB042D04939B05DD2DC /* Inter-SemiBold.otf in Resources */,
+				CBCE2719FB17409481FB4C5D /* Inter-BlackItalic.otf in Resources */,
+				78C996E770C449AC847F9AAD /* Inter-MediumItalic.otf in Resources */,
+				7D177A19BED249748E21E1DB /* Inter-Black.otf in Resources */,
+				B73A457AC02F4EA1B094480D /* Inter-Italic.otf in Resources */,
+				768DFD7A14314DAFBABCD90E /* Inter-ExtraBold.otf in Resources */,
+				8A6B10C52C0440119B1284B6 /* Inter-LightItalic-BETA.otf in Resources */,
+				0182BEAD0A7E4DE098BE41B9 /* Inter-ExtraBoldItalic.otf in Resources */,
+				A93FFE8DC9294DCDB8F296A8 /* Inter-BoldItalic.otf in Resources */,
+				278493B33FC74BE0B2E663D3 /* Inter-ThinItalic-BETA.otf in Resources */,
+				51281BD20D2143C28251543B /* UbuntuSans-Medium.ttf in Resources */,
+				F411BE5127794A91B0B76996 /* UbuntuSans-Regular.ttf in Resources */,
+				E6671D38E8244493BBC56D79 /* Sono_Proportional-Regular.ttf in Resources */,
+				EEA823729D0C4A34B9700DBD /* UbuntuSans-LightItalic.ttf in Resources */,
+				05EAC27612C94772B85C01C5 /* Sono-SemiBold.ttf in Resources */,
+				06D3EE79C997444A82DA18B7 /* Sono-Medium.ttf in Resources */,
+				78BCF38E2BC146E1B1FC8C5C /* Sono_Proportional-Light.ttf in Resources */,
+				4ED14B2285F74C4EA778C8D3 /* UbuntuSans-ExtraBoldItalic.ttf in Resources */,
+				CC12BF7D4EDA4E89BEE2370F /* Sono-Bold.ttf in Resources */,
+				37AE4F44826B42D4BC22EB9F /* UbuntuSans-SemiBoldItalic.ttf in Resources */,
+				828D1774AD4B4A9F9574CF88 /* Sono_Proportional-Medium.ttf in Resources */,
+				0126E065E6AA4DC6B8D68CB3 /* Sono-Regular.ttf in Resources */,
+				35B5492D0D814629838E7A83 /* UbuntuSans-ThinItalic.ttf in Resources */,
+				3A67C618EB384240B66F86F8 /* Sono-ExtraLight.ttf in Resources */,
+				D21836503F274503B180F699 /* Sono_Proportional-ExtraLight.ttf in Resources */,
+				48C9A8ECF8C74D7DA4881C88 /* UbuntuSans-ExtraLight.ttf in Resources */,
+				45CC95409C284A61B0A60EE6 /* UbuntuSans-ExtraLightItalic.ttf in Resources */,
+				EF9F5F28893C441395EC569F /* UbuntuSans-SemiBold.ttf in Resources */,
+				72F83CDF4C7344A792BCDE62 /* UbuntuSans-BoldItalic.ttf in Resources */,
+				B4E728A7573C4A25B7F0CF17 /* Sono-ExtraBold.ttf in Resources */,
+				F79384B28A0D4B048EE227DA /* Sono_Proportional-ExtraBold.ttf in Resources */,
+				E5CC0CA8BA2744DAB7E72505 /* Sono-Light.ttf in Resources */,
+				146CCD8191184732ADABDE34 /* UbuntuSans-Light.ttf in Resources */,
+				2C01F43D6C03444EA1011FFE /* Sono_Proportional-SemiBold.ttf in Resources */,
+				D741D51C06B546D1B59E2FD3 /* Sono_Proportional-Bold.ttf in Resources */,
+				4E082F9635EB42A1B2F22576 /* UbuntuSans-ExtraBold.ttf in Resources */,
+				0F9E8ABD88FB423DA5FAF044 /* UbuntuSans-Thin.ttf in Resources */,
+				DA951CFD1BD840A0A8810D6C /* UbuntuSans-Bold.ttf in Resources */,
+				4801F00BD67C4F4F998DA065 /* UbuntuSans-MediumItalic.ttf in Resources */,
+				22A8BA7BDAE149D0956256E9 /* UbuntuSans-Italic.ttf in Resources */,
+				0FC96AB58F7C4B4E9C6B2DB2 /* BootSplash.storyboard in Resources */,
+				F0F363B629074F3B940A8DDC /* Colors.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00BBAFA0F5F9E1B9355F492F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-govgrids/Pods-govgrids-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-govgrids/Pods-govgrids-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-govgrids/Pods-govgrids-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		15E400595FDEAA95448FBBA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-govgrids-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30C7B212D2320B3DD90D7371 /* [RNFB] Embed Firebase SPM Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${BUILT_PRODUCTS_DIR}/PackageFrameworks",
+			);
+			name = "[RNFB] Embed Firebase SPM Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "set -euo pipefail\n\napp_frameworks_dir=\"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\nmkdir -p \"${app_frameworks_dir}\"\n\nembed_frameworks_from() {\n  local source_dir=\"$1\"\n  [ -d \"${source_dir}\" ] || return 0\n\n  find \"${source_dir}\" -maxdepth 1 -type d -name \"*.framework\" -print0 | while IFS= read -r -d '' framework; do\n    framework_name=\"$(basename \"${framework}\")\"\n    destination=\"${app_frameworks_dir}/${framework_name}\"\n\n    if [ -e \"${destination}\" ]; then\n      continue\n    fi\n\n    # Xcode's Archive action writes EVERY SKIP_INSTALL=YES product into\n    # ${OBJROOT}/UninstalledProducts/${PLATFORM_NAME} -- not just Swift\n    # Package products. With CocoaPods + `use_frameworks!` (required for\n    # SPM mode), that folder also contains every pod's .framework,\n    # including STATIC ones (Expo modules, the Pods_<target> umbrella,\n    # ...). Embedding a static framework into the app bundle makes App\n    # Store validation fail with \"Invalid bundle structure ... binary\n    # file is not permitted\". Only ever embed real dynamic libraries.\n    #\n    # Internal binary name matches the .framework folder name minus the\n    # extension for every CocoaPods/SPM-built framework (all this script\n    # handles).\n    binary_name=\"${framework_name%.framework}\"\n    # Deliberate tradeoff: match `file -b` prose for \"dynamically linked\"\n    # rather than inspecting Mach-O magic bytes. Locale-independent in\n    # practice on Apple's `file`, but still a CLI string match.\n    file_description=\"\"\n    if [ -f \"${framework}/${binary_name}\" ]; then\n      file_description=\"$(file -b \"${framework}/${binary_name}\")\"\n    fi\n    # Do not use `file ... | grep -q` here. Under this script's\n    # `set -o pipefail`, `grep -q` exits after the first matching line of\n    # a multi-line universal-binary description, `file` receives SIGPIPE,\n    # and the otherwise-successful pipeline becomes false.\n    if [[ \"${file_description}\" != *\"dynamically linked\"* ]]; then\n      echo \"Skipping ${framework_name}: binary missing or not dynamically linked\"\n      continue\n    fi\n\n    echo \"Embedding Firebase SPM framework ${framework_name} (from ${source_dir})\"\n    rsync -av --delete \\\n      --filter \"- Headers\" \\\n      --filter \"- PrivateHeaders\" \\\n      --filter \"- Modules\" \\\n      \"${framework}\" \\\n      \"${app_frameworks_dir}\"\n\n    if [ -n \"${EXPANDED_CODE_SIGN_IDENTITY:-}\" ] && [ \"${CODE_SIGNING_REQUIRED:-}\" != \"NO\" ] && [ \"${CODE_SIGNING_ALLOWED:-}\" != \"NO\" ]; then\n      /usr/bin/codesign --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" ${OTHER_CODE_SIGN_FLAGS:-} --preserve-metadata=identifier,entitlements \"${destination}\"\n    fi\n  done\n}\n\n# Regular (simulator/device) builds put every Swift Package product for\n# the whole scheme's dependency graph into one shared folder.\nembed_frameworks_from \"${BUILT_PRODUCTS_DIR}/PackageFrameworks\"\n\n# Xcode's Archive action (ONLY_ACTIVE_ARCH=NO, DEPLOYMENT_POSTPROCESSING=YES)\n# never populates PackageFrameworks. It stages build products under\n# ${OBJROOT}/UninstalledProducts/${PLATFORM_NAME} instead -- and that\n# folder is NOT SPM-only: Archive writes every SKIP_INSTALL=YES product\n# there, which under CocoaPods + use_frameworks! (required for SPM mode)\n# includes every pod .framework (dynamic Firebase SPM products and static\n# pods alike). Without this fallback, Archive embeds zero Firebase SPM\n# frameworks and the app crashes at launch (missing-library dyld). The\n# filter inside embed_frameworks_from keeps only dynamically linked\n# binaries so static CocoaPods frameworks are not copied into the app\n# bundle (App Store \"Invalid bundle structure\").\nembed_frameworks_from \"${OBJROOT}/UninstalledProducts/${PLATFORM_NAME}\"\n";
+		};
+		32F5446103AC2838B0F33B50 /* [stripe-react-native] Embed SPM Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[stripe-react-native] Embed SPM Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif [ -z \"${TARGET_BUILD_DIR:-}\" ]; then\n  exit 0\nfi\nif [ -z \"${FRAMEWORKS_FOLDER_PATH:-}\" ]; then\n  exit 0\nfi\nDEST=\"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\nmkdir -p \"$DEST\"\nfor SEARCH_DIR in \"${BUILT_PRODUCTS_DIR}/PackageFrameworks\" \"${OBJROOT}/UninstalledProducts/${PLATFORM_NAME}\"; do\n  [ -d \"$SEARCH_DIR\" ] || continue\n  for FRAMEWORK in \"$SEARCH_DIR\"/Stripe*.framework; do\n    [ -d \"$FRAMEWORK\" ] || continue\n    NAME=\"$(basename \"$FRAMEWORK\" .framework)\"\n    BINARY=\"$FRAMEWORK/$NAME\"\n    [ -f \"$BINARY\" ] || continue\n    file -b \"$BINARY\" | grep -q \"dynamically linked\" || continue\n    # No trailing slash on the source: --delete stays inside this framework.\n    rsync -a --delete --exclude Headers --exclude PrivateHeaders --exclude Modules \"$FRAMEWORK\" \"$DEST/\"\n    if [ -n \"${EXPANDED_CODE_SIGN_IDENTITY:-}\" ] && [ \"${CODE_SIGNING_ALLOWED:-NO}\" = \"YES\" ]; then\n      codesign --force --sign \"$EXPANDED_CODE_SIGN_IDENTITY\" --preserve-metadata=identifier,entitlements \"$DEST/$NAME.framework\"\n    fi\n  done\ndone\n";
+		};
+		521AF8CE6CC98B49F1093FCE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-govgrids/Pods-govgrids-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-govgrids/Pods-govgrids-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-govgrids/Pods-govgrids-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C3547290150D4BCA572C48D /* [CP-User] [RNFB] Core Configuration */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "[CP-User] [RNFB] Core Configuration";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/usr/bin/env bash\n#\n# Copyright (c) 2016-present Invertase Limited & Contributors\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this library except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#   http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n#\n\n##########################################################################\n##########################################################################\n#\n#  NOTE THAT IF YOU CHANGE THIS FILE YOU MUST RUN pod install AFTERWARDS\n#\n#  This file is installed as an Xcode build script in the project file\n#  by cocoapods, and you will not see your changes until you pod install\n#\n##########################################################################\n##########################################################################\n\nset -e\n\n_MAX_LOOKUPS=2;\n_SEARCH_RESULT=''\n_RN_ROOT_EXISTS=''\n_CURRENT_LOOKUPS=1\n_JSON_ROOT=\"'react-native'\"\n_JSON_FILE_NAME='firebase.json'\n_JSON_OUTPUT_BASE64='e30=' # { }\n_CURRENT_SEARCH_DIR=${PROJECT_DIR}\n_PLIST_BUDDY=/usr/libexec/PlistBuddy\n_TARGET_PLIST=\"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH}\"\n_DSYM_PLIST=\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n\n# plist arrays\n_PLIST_ENTRY_KEYS=()\n_PLIST_ENTRY_TYPES=()\n_PLIST_ENTRY_VALUES=()\n\nfunction setPlistValue {\n  echo \"note:      setting plist entry '$1' of type '$2' in file '$4'\"\n  ${_PLIST_BUDDY} -c \"Add :$1 $2 '$3'\" $4 || echo \"note:      '$1' already exists\"\n}\n\nfunction getFirebaseJsonKeyValue () {\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    ruby -Ku -e \"require 'rubygems';require 'json'; output=JSON.parse('$1'); puts output[$_JSON_ROOT]['$2']\"\n  else\n    echo \"\"\n  fi;\n}\n\nfunction jsonBoolToYesNo () {\n  if [[ $1 == \"false\" ]]; then\n    echo \"NO\"\n  elif [[ $1 == \"true\" ]]; then\n    echo \"YES\"\n  else echo \"NO\"\n  fi\n}\n\necho \"note: -> RNFB build script started\"\necho \"note: 1) Locating ${_JSON_FILE_NAME} file:\"\n\nif [[ -z ${_CURRENT_SEARCH_DIR} ]]; then\n  _CURRENT_SEARCH_DIR=$(pwd)\nfi;\n\nwhile true; do\n  _CURRENT_SEARCH_DIR=$(dirname \"$_CURRENT_SEARCH_DIR\")\n  if [[ \"$_CURRENT_SEARCH_DIR\" == \"/\" ]] || [[ ${_CURRENT_LOOKUPS} -gt ${_MAX_LOOKUPS} ]]; then break; fi;\n  echo \"note:      ($_CURRENT_LOOKUPS of $_MAX_LOOKUPS) Searching in '$_CURRENT_SEARCH_DIR' for a ${_JSON_FILE_NAME} file.\"\n  _SEARCH_RESULT=$(find \"$_CURRENT_SEARCH_DIR\" -maxdepth 2 -name ${_JSON_FILE_NAME} -print | /usr/bin/head -n 1)\n  if [[ ${_SEARCH_RESULT} ]]; then\n    echo \"note:      ${_JSON_FILE_NAME} found at $_SEARCH_RESULT\"\n    break;\n  fi;\n  _CURRENT_LOOKUPS=$((_CURRENT_LOOKUPS+1))\ndone\n\nif [[ ${_SEARCH_RESULT} ]]; then\n  _JSON_OUTPUT_RAW=$(cat \"${_SEARCH_RESULT}\")\n  if ! _RN_ROOT_EXISTS=$(ruby -Ku -e \"require 'json'; output=JSON.parse('$_JSON_OUTPUT_RAW'); puts output[$_JSON_ROOT]\"); then\n    echo \"error: Failed to parse firebase.json, check for syntax errors.\"\n    exit 1\n  fi\n\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    if ! python3 --version >/dev/null 2>&1; then echo \"error: python3 not found, firebase.json file processing error.\" && exit 1; fi\n    _JSON_OUTPUT_BASE64=$(python3 -c 'import json,sys,base64;print(base64.b64encode(bytes(json.dumps(json.loads(open('\"'${_SEARCH_RESULT}'\"', '\"'rb'\"').read())['${_JSON_ROOT}']), '\"'utf-8'\"')).decode())' || echo \"e30=\")\n  fi\n\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n\n  # config.app_data_collection_default_enabled\n  _APP_DATA_COLLECTION_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_data_collection_default_enabled\")\n  if [[ $_APP_DATA_COLLECTION_ENABLED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseDataCollectionDefaultEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_DATA_COLLECTION_ENABLED\")\")\n  fi\n\n  # config.analytics_auto_collection_enabled\n  _ANALYTICS_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_auto_collection_enabled\")\n  if [[ $_ANALYTICS_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_COLLECTION\")\")\n  fi\n\n  # config.analytics_collection_deactivated\n  _ANALYTICS_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_collection_deactivated\")\n  if [[ $_ANALYTICS_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_DEACTIVATED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_DEACTIVATED\")\")\n  fi\n\n  # config.analytics_idfv_collection_enabled\n  _ANALYTICS_IDFV_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_idfv_collection_enabled\")\n  if [[ $_ANALYTICS_IDFV_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_IDFV_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_IDFV_COLLECTION\")\")\n  fi\n\n  # config.analytics_default_allow_analytics_storage\n  _ANALYTICS_STORAGE=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_analytics_storage\")\n  if [[ $_ANALYTICS_STORAGE ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_ANALYTICS_STORAGE\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_STORAGE\")\")\n  fi\n\n  # config.analytics_default_allow_ad_storage\n  _ANALYTICS_AD_STORAGE=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_storage\")\n  if [[ $_ANALYTICS_AD_STORAGE ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_STORAGE\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AD_STORAGE\")\")\n  fi\n\n  # config.analytics_default_allow_ad_user_data\n  _ANALYTICS_AD_USER_DATA=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_user_data\")\n  if [[ $_ANALYTICS_AD_USER_DATA ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_USER_DATA\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AD_USER_DATA\")\")\n  fi\n\n  # config.analytics_default_allow_ad_personalization_signals\n  _ANALYTICS_PERSONALIZATION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_personalization_signals\")\n  if [[ $_ANALYTICS_PERSONALIZATION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_PERSONALIZATION_SIGNALS\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_PERSONALIZATION\")\")\n  fi\n\n  # config.analytics_registration_with_ad_network_enabled\n  _ANALYTICS_REGISTRATION_WITH_AD_NETWORK=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"google_analytics_registration_with_ad_network_enabled\")\n  if [[ $_ANALYTICS_REGISTRATION_WITH_AD_NETWORK ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_REGISTRATION_WITH_AD_NETWORK_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_REGISTRATION_WITH_AD_NETWORK\")\")\n  fi\n\n  # config.google_analytics_automatic_screen_reporting_enabled\n  _ANALYTICS_AUTO_SCREEN_REPORTING=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"google_analytics_automatic_screen_reporting_enabled\")\n  if [[ $_ANALYTICS_AUTO_SCREEN_REPORTING ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAutomaticScreenReportingEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_SCREEN_REPORTING\")\")\n  fi\n\n  # config.perf_auto_collection_enabled\n  _PERF_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_auto_collection_enabled\")\n  if [[ $_PERF_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_enabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_AUTO_COLLECTION\")\")\n  fi\n\n  # config.perf_collection_deactivated\n  _PERF_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_collection_deactivated\")\n  if [[ $_PERF_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_deactivated\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_DEACTIVATED\")\")\n  fi\n\n  # config.messaging_auto_init_enabled\n  _MESSAGING_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"messaging_auto_init_enabled\")\n  if [[ $_MESSAGING_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseMessagingAutoInitEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_MESSAGING_AUTO_INIT\")\")\n  fi\n\n  # config.in_app_messaging_auto_colllection_enabled\n  _FIAM_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"in_app_messaging_auto_collection_enabled\")\n  if [[ $_FIAM_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseInAppMessagingAutomaticDataCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_FIAM_AUTO_INIT\")\")\n  fi\n\n  # config.app_check_token_auto_refresh\n  _APP_CHECK_TOKEN_AUTO_REFRESH=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_check_token_auto_refresh\")\n  if [[ $_APP_CHECK_TOKEN_AUTO_REFRESH ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAppCheckTokenAutoRefreshEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_CHECK_TOKEN_AUTO_REFRESH\")\")\n  fi\n\n  # config.crashlytics_disable_auto_disabler - undocumented for now - mainly for debugging, document if becomes useful\n  _CRASHLYTICS_AUTO_DISABLE_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"crashlytics_disable_auto_disabler\")\n  if [[ $_CRASHLYTICS_AUTO_DISABLE_ENABLED == \"true\" ]]; then\n    echo \"Disabled Crashlytics auto disabler.\" # do nothing\n  else\n    _PLIST_ENTRY_KEYS+=(\"FirebaseCrashlyticsCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"NO\")\n  fi\nelse\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n  echo \"warning:   A firebase.json file was not found, whilst this file is optional it is recommended to include it to configure firebase services in React Native Firebase.\"\nfi;\n\necho \"note: 2) Injecting Info.plist entries: \"\n\n# Log out the keys we're adding\nfor i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n  echo \"    ->  $i) ${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\"\ndone\n\nfor plist in \"${_TARGET_PLIST}\" \"${_DSYM_PLIST}\" ; do\n  if [[ -f \"${plist}\" ]]; then\n\n    # paths with spaces break the call to setPlistValue. temporarily modify\n    # the shell internal field separator variable (IFS), which normally\n    # includes spaces, to consist only of line breaks\n    oldifs=$IFS\n    IFS=\"\n\"\n\n    for i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n      setPlistValue \"${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\" \"${plist}\"\n    done\n\n    # restore the original internal field separator value\n    IFS=$oldifs\n  else\n    echo \"warning:   A Info.plist build output file was not found (${plist})\"\n  fi\ndone\n\necho \"note: <- RNFB build script finished\"\n";
+		};
+		87478DC062BD2A6E6F387CD8 /* [RNFB] Remove duplicate Firebase/Google SPM binary xcframework signature files */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[RNFB] Remove duplicate Firebase/Google SPM binary xcframework signature files";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -f \"${CONFIGURATION_BUILD_DIR}\"/GoogleAppMeasurement.xcframework-ios.signature\nrm -f \"${CONFIGURATION_BUILD_DIR}\"/GoogleAppMeasurementIdentitySupport.xcframework-ios.signature\nrm -f \"${CONFIGURATION_BUILD_DIR}\"/GoogleAdsOnDeviceConversion.xcframework-ios.signature\nrm -f \"${CONFIGURATION_BUILD_DIR}\"/FirebaseAnalytics.xcframework-ios.signature\nrm -f \"${CONFIGURATION_BUILD_DIR}\"/FirebaseFirestoreInternal.xcframework-ios.signature\nrm -f \"${CONFIGURATION_BUILD_DIR}\"/absl.xcframework-ios.signature\nrm -f \"${CONFIGURATION_BUILD_DIR}\"/grpc.xcframework-ios.signature\nrm -f \"${CONFIGURATION_BUILD_DIR}\"/grpcpp.xcframework-ios.signature\nrm -f \"${CONFIGURATION_BUILD_DIR}\"/openssl_grpc.xcframework-ios.signature\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
+				AD6B6014307DCDC1008DCCB3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04AA6AA019EDEA719A91FA71 /* Pods-govgrids.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_EXPLICIT_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = govgrids/govgrids.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				CUSTOM_URL = "govgrids-dev";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = TX32KCJ2HM;
+				ENABLE_BITCODE = NO;
+				GOOGLE_MAP_KEY = AIzaSyCDemXt2UVNMAyxUHiQQRJOGBrLJFLSquo;
+				INFOPLIST_FILE = govgrids/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.govgrids;
+				PRODUCT_NAME = govgrids;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Govgrids Profile";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
+				SWIFT_INCLUDE_PATHS = "$(inherited) ${SYMROOT}/${CONFIGURATION}${EFFECTIVE_PLATFORM_NAME}/";
+				SWIFT_OBJC_BRIDGING_HEADER = "govgrids-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6525932AAFDB295A13BBD165 /* Pods-govgrids.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_EXPLICIT_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = govgrids/govgrids.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				CUSTOM_URL = "govgrids-dev";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = TX32KCJ2HM;
+				GOOGLE_MAP_KEY = AIzaSyCDemXt2UVNMAyxUHiQQRJOGBrLJFLSquo;
+				INFOPLIST_FILE = govgrids/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.govgrids;
+				PRODUCT_NAME = govgrids;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Govgrids Profile";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
+				SWIFT_INCLUDE_PATHS = "$(inherited) ${SYMROOT}/${CONFIGURATION}${EFFECTIVE_PLATFORM_NAME}/";
+				SWIFT_OBJC_BRIDGING_HEADER = "govgrids-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/ReactCommon",
+					"${PODS_ROOT}/ReactCommon/react/nativemodule/core",
+					"${PODS_ROOT}/React-runtimeexecutor",
+					"${PODS_ROOT}/React-runtimeexecutor/platform/ios",
+					"${PODS_ROOT}/ReactCommon-Samples",
+					"${PODS_ROOT}/ReactCommon-Samples/platform/ios",
+					"${PODS_ROOT}/React-Fabric/react/renderer/components/view/platform/cxx",
+					"${PODS_ROOT}/React-Fabric/react/renderer/components/scrollview/platform/cxx",
+					"${PODS_ROOT}/React-Fabric/react/renderer/components/scrollview/platform/ios",
+					"${PODS_ROOT}/React-FabricComponents/react/renderer/textlayoutmanager/platform/ios",
+					"${PODS_ROOT}/React-FabricComponents/react/renderer/components/text/platform/cxx",
+					"${PODS_ROOT}/React-FabricComponents/react/renderer/components/textinput/platform/ios",
+					"${PODS_ROOT}/React-FabricComponents/react/renderer/components/switch/iosswitch",
+					"${PODS_ROOT}/React-NativeModulesApple",
+					"${PODS_ROOT}/React-bridging",
+					"${PODS_ROOT}/React-graphics",
+					"${PODS_ROOT}/React-graphics/react/renderer/graphics/platform/ios",
+					"${PODS_ROOT}/React-featureflags",
+					"${PODS_ROOT}/React-renderercss",
+					"${PODS_ROOT}/React-cxxstableapi",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DRCT_REMOVE_LEGACY_ARCH=1",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
+					"-DRCT_REMOVE_LEGACY_ARCH=1",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				PODFILE_DIR = "$(SRCROOT)";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				USE_HERMES = true;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/ReactCommon",
+					"${PODS_ROOT}/ReactCommon/react/nativemodule/core",
+					"${PODS_ROOT}/React-runtimeexecutor",
+					"${PODS_ROOT}/React-runtimeexecutor/platform/ios",
+					"${PODS_ROOT}/ReactCommon-Samples",
+					"${PODS_ROOT}/ReactCommon-Samples/platform/ios",
+					"${PODS_ROOT}/React-Fabric/react/renderer/components/view/platform/cxx",
+					"${PODS_ROOT}/React-Fabric/react/renderer/components/scrollview/platform/cxx",
+					"${PODS_ROOT}/React-Fabric/react/renderer/components/scrollview/platform/ios",
+					"${PODS_ROOT}/React-FabricComponents/react/renderer/textlayoutmanager/platform/ios",
+					"${PODS_ROOT}/React-FabricComponents/react/renderer/components/text/platform/cxx",
+					"${PODS_ROOT}/React-FabricComponents/react/renderer/components/textinput/platform/ios",
+					"${PODS_ROOT}/React-FabricComponents/react/renderer/components/switch/iosswitch",
+					"${PODS_ROOT}/React-NativeModulesApple",
+					"${PODS_ROOT}/React-bridging",
+					"${PODS_ROOT}/React-graphics",
+					"${PODS_ROOT}/React-graphics/react/renderer/graphics/platform/ios",
+					"${PODS_ROOT}/React-featureflags",
+					"${PODS_ROOT}/React-renderercss",
+					"${PODS_ROOT}/React-cxxstableapi",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DRCT_REMOVE_LEGACY_ARCH=1",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
+					"-DRCT_REMOVE_LEGACY_ARCH=1",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				PODFILE_DIR = "$(SRCROOT)";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				USE_HERMES = true;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "govgrids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "govgrids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

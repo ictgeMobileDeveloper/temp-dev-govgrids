@@ -1,0 +1,685 @@
+current directory: /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c
+/Users/ictgemobile/.rbenv/versions/3.3.6/bin/ruby extconf.rb
+checking for pkg-config for libffi... ["-I/Library/Developer/CommandLineTools/SDKs/MacOSX27.sdk/usr/include/ffi ", "", "-lffi"]
+checking for ffi_prep_closure_loc() in -lffi... no
+checking for ffi_prep_closure_loc() in -llibffi... no
+checking for ffi_prep_closure_loc() in -llibffi-8... no
+checking for whether -Wl,--exclude-libs,ALL is accepted as LDFLAGS... no
+checking for rb_gc_mark_movable()... yes
+checking for whether -pthread is accepted as LDFLAGS... yes
+creating extconf.h
+creating Makefile
+
+current directory: /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c
+make DESTDIR\= sitearchdir\=./.gem.20261012-39540-i8rj9s sitelibdir\=./.gem.20261012-39540-i8rj9s clean
+
+current directory: /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c
+make DESTDIR\= sitearchdir\=./.gem.20261012-39540-i8rj9s sitelibdir\=./.gem.20261012-39540-i8rj9s
+Configuring libffi
+clang: error: unsupported option '-print-multi-os-directory'
+clang: error: no input files
+cd "/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi-arm64-darwin27" && /Applications/Xcode.app/Contents/Developer/usr/bin/make
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  all-recursive
+Making all in include
+make[3]: Nothing to be done for `all'.
+Making all in testsuite
+make[3]: Nothing to be done for `all'.
+Making all in man
+make[3]: Nothing to be done for `all'.
+/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi  -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/include -Iinclude -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src   -Wall  -fexceptions -c -o src/prep_cif.lo /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src/prep_cif.c
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/include -Iinclude -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src -Wall -fexceptions -c /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src/prep_cif.c  -fno-common -DPIC -o src/prep_cif.o
+/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi  -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/include -Iinclude -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src   -Wall  -fexceptions -c -o src/types.lo /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src/types.c
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/include -Iinclude -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src -Wall -fexceptions -c /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src/types.c  -fno-common -DPIC -o src/types.o
+/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi  -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/include -Iinclude -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src   -Wall  -fexceptions -c -o src/raw_api.lo /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src/raw_api.c
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/include -Iinclude -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src -Wall -fexceptions -c /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src/raw_api.c  -fno-common -DPIC -o src/raw_api.o
+/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi  -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/include -Iinclude -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src   -Wall  -fexceptions -c -o src/java_raw_api.lo /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src/java_raw_api.c
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/include -Iinclude -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src -Wall -fexceptions -c /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src/java_raw_api.c  -fno-common -DPIC -o src/java_raw_api.o
+/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src/java_raw_api.c:328:46: warning: 'ffi_java_raw_size' is deprecated [-Wdeprecated-declarations]
+  328 |   ffi_java_raw *raw = (ffi_java_raw*)alloca (ffi_java_raw_size (cif));
+      |                                              ^
+include/ffi.h:315:56: note: 'ffi_java_raw_size' has been explicitly marked deprecated here
+  315 | size_t ffi_java_raw_size (ffi_cif *cif) __attribute__((deprecated));
+      |                                                        ^
+/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src/java_raw_api.c:331:3: warning: 'ffi_java_ptrarray_to_raw' is deprecated [-Wdeprecated-declarations]
+  331 |   ffi_java_ptrarray_to_raw (cif, avalue, raw);
+      |   ^
+include/ffi.h:311:93: note: 'ffi_java_ptrarray_to_raw' has been explicitly marked deprecated here
+  311 | void ffi_java_ptrarray_to_raw (ffi_cif *cif, void **args, ffi_java_raw *raw) __attribute__((deprecated));
+      |                                                                                             ^
+2 warnings generated.
+/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi  -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/include -Iinclude -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src   -Wall  -fexceptions -c -o src/closures.lo /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src/closures.c
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/include -Iinclude -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src -Wall -fexceptions -c /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src/closures.c  -fno-common -DPIC -o src/closures.o
+/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi  -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/include -Iinclude -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src   -Wall  -fexceptions -c -o src/tramp.lo /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src/tramp.c
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/include -Iinclude -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src -Wall -fexceptions -c /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src/tramp.c  -fno-common -DPIC -o src/tramp.o
+/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi  -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/include -Iinclude -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src   -Wall  -fexceptions -c -o src/aarch64/ffi.lo /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src/aarch64/ffi.c
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/include -Iinclude -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src -Wall -fexceptions -c /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src/aarch64/ffi.c  -fno-common -DPIC -o src/aarch64/ffi.o
+/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi  -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/include -Iinclude -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src  '-I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/include -Iinclude -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src'  -c -o src/aarch64/sysv.lo /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src/aarch64/sysv.S
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi -I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/include -Iinclude -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src "-I. -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/include -Iinclude -I/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src" -c /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/src/aarch64/sysv.S  -fno-common -DPIC -o src/aarch64/sysv.o
+/bin/sh ./libtool  --tag=CC   --mode=link clang  -Wall  -fexceptions   -o libffi_convenience.la  src/prep_cif.lo src/types.lo src/raw_api.lo src/java_raw_api.lo src/closures.lo src/tramp.lo   src/aarch64/ffi.lo src/aarch64/sysv.lo 
+libtool: link: ar cr .libs/libffi_convenience.a  src/prep_cif.o src/types.o src/raw_api.o src/java_raw_api.o src/closures.o src/tramp.o src/aarch64/ffi.o src/aarch64/sysv.o
+libtool: link: ranlib .libs/libffi_convenience.a
+libtool: link: ( cd ".libs" && rm -f "libffi_convenience.la" && ln -s "../libffi_convenience.la" "libffi_convenience.la" )
+/bin/sh ./libtool  --tag=CC   --mode=link clang  -Wall  -fexceptions -no-undefined -version-info `grep -v '^#' /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi/libtool-version`     -o libffi.la -rpath /usr/local/lib src/prep_cif.lo src/types.lo src/raw_api.lo src/java_raw_api.lo src/closures.lo src/tramp.lo  src/aarch64/ffi.lo src/aarch64/sysv.lo 
+libtool: link: ar cr .libs/libffi.a  src/prep_cif.o src/types.o src/raw_api.o src/java_raw_api.o src/closures.o src/tramp.o src/aarch64/ffi.o src/aarch64/sysv.o
+libtool: link: ranlib .libs/libffi.a
+libtool: link: ( cd ".libs" && rm -f "libffi.la" && ln -s "../libffi.la" "libffi.la" )
+compiling AbstractMemory.c
+In file included from AbstractMemory.c:40:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling ArrayType.c
+In file included from ArrayType.c:30:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling Buffer.c
+In file included from Buffer.c:34:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling Call.c
+In file included from Call.c:40:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling ClosurePool.c
+In file included from ClosurePool.c:47:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling DynamicLibrary.c
+In file included from DynamicLibrary.c:41:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling Function.c
+In file included from Function.c:42:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling FunctionInfo.c
+In file included from FunctionInfo.c:40:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling LastError.c
+In file included from LastError.c:39:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling LongDouble.c
+In file included from LongDouble.c:1:
+In file included from ./LongDouble.h:33:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling MappedType.c
+In file included from MappedType.c:30:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling MemoryPointer.c
+In file included from MemoryPointer.c:34:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling MethodHandle.c
+In file included from MethodHandle.c:43:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling Platform.c
+In file included from Platform.c:36:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling Pointer.c
+In file included from Pointer.c:33:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling Struct.c
+In file included from Struct.c:37:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling StructByValue.c
+In file included from StructByValue.c:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling StructLayout.c
+In file included from StructLayout.c:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling Thread.c
+In file included from Thread.c:44:
+In file included from ./Thread.h:34:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling Type.c
+In file included from Type.c:35:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling Types.c
+In file included from Types.c:32:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling Variadic.c
+In file included from Variadic.c:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling ffi.c
+In file included from ffi.c:33:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+linking shared-object ffi_c.bundle
+
+current directory: /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c
+make DESTDIR\= sitearchdir\=./.gem.20261012-39540-i8rj9s sitelibdir\=./.gem.20261012-39540-i8rj9s install
+cd "/Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c/libffi-arm64-darwin27" && /Applications/Xcode.app/Contents/Developer/usr/bin/make
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  all-recursive
+Making all in include
+make[3]: Nothing to be done for `all'.
+Making all in testsuite
+make[3]: Nothing to be done for `all'.
+Making all in man
+make[3]: Nothing to be done for `all'.
+make[3]: Nothing to be done for `all-am'.
+compiling AbstractMemory.c
+In file included from AbstractMemory.c:40:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling ArrayType.c
+In file included from ArrayType.c:30:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling Buffer.c
+In file included from Buffer.c:34:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling Call.c
+In file included from Call.c:40:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling ClosurePool.c
+In file included from ClosurePool.c:47:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling DynamicLibrary.c
+In file included from DynamicLibrary.c:41:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling Function.c
+In file included from Function.c:42:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling FunctionInfo.c
+In file included from FunctionInfo.c:40:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling LastError.c
+In file included from LastError.c:39:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling LongDouble.c
+In file included from LongDouble.c:1:
+In file included from ./LongDouble.h:33:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling MappedType.c
+In file included from MappedType.c:30:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling MemoryPointer.c
+In file included from MemoryPointer.c:34:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling MethodHandle.c
+In file included from MethodHandle.c:43:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling Platform.c
+In file included from Platform.c:36:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling Pointer.c
+In file included from Pointer.c:33:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling Struct.c
+In file included from Struct.c:37:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling StructByValue.c
+In file included from StructByValue.c:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling StructLayout.c
+In file included from StructLayout.c:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling Thread.c
+In file included from Thread.c:44:
+In file included from ./Thread.h:34:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling Type.c
+In file included from Type.c:35:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling Types.c
+In file included from Types.c:32:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling Variadic.c
+In file included from Variadic.c:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+compiling ffi.c
+In file included from ffi.c:33:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby.h:38:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/ruby.h:28:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/arithmetic/char.h:29:
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/ictgemobile/.rbenv/versions/3.3.6/include/ruby-3.3.0/ruby/internal/core/rbasic.h:88:17: note: member 'klass' declared 'const' here
+   88 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+linking shared-object ffi_c.bundle
+/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20261012-39540-i8rj9s
+
+current directory: /Users/ictgemobile/Desktop/projects/govgrids/vendor/bundle/ruby/3.3.0/gems/ffi-1.17.3/ext/ffi_c
+make DESTDIR\= sitearchdir\=./.gem.20261012-39540-i8rj9s sitelibdir\=./.gem.20261012-39540-i8rj9s clean
