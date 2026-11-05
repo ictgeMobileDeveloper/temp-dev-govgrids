@@ -11,13 +11,13 @@ import {
   View,
   Animated as RNAnimated,
   Easing,
-} from 'react-native';
-import CustomDrawer from '../Components/CustomDrawer';
-import React, {useEffect, useMemo, useRef, useState} from 'react';
-import {useSafeAreaInsets} from 'react-native-safe-area-context';
-import {useDispatch, useSelector} from 'react-redux';
-import {AppRootStore} from '../../Redux/AppStore';
-import {AppStyles} from '../../Utils/AppStyles';
+} from "react-native";
+import CustomDrawer from "../Components/CustomDrawer";
+import React, { useEffect, useMemo, useRef, useState } from "react";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { useDispatch, useSelector } from "react-redux";
+import { AppRootStore } from "../../Redux/AppStore";
+import { AppStyles } from "../../Utils/AppStyles";
 
 import {
   normalized,
@@ -25,36 +25,37 @@ import {
   ScreenProps,
   ScreenSize,
   sortingList,
-} from '../../Utils/AppConstants';
-import CustomHeader from '../Components/CustomHeader';
-import CustomButton from '../Components/CustomButton';
-import {Routes} from '../../Utils/Routes';
-import ForwardArrowIcon from '../Svg/ForwardArrowIcon';
-import CustomInput from '../Components/CustomInput';
-import CustomDropDownList from '../Components/CustomDropDownList';
-import {apiHandler} from '../../Network/Services/ApiHandler';
-import {ENDPOINTS} from '../../Network/Urls';
-import {setShowToast} from '../../Redux/AppReducers';
-import {AppStrings, Empty_Screen_Type} from '../../Utils/AppStrings';
-import OfflineIcon from '../Svg/OfflineIcon';
-import LinearGradient from 'react-native-linear-gradient';
+} from "../../Utils/AppConstants";
+import CustomHeader from "../Components/CustomHeader";
+import CustomButton from "../Components/CustomButton";
+import { Routes } from "../../Utils/Routes";
+import ForwardArrowIcon from "../Svg/ForwardArrowIcon";
+import CustomInput from "../Components/CustomInput";
+import CustomDropDownList from "../Components/CustomDropDownList";
+import { apiHandler } from "../../Network/Services/ApiHandler";
+import { ENDPOINTS } from "../../Network/Urls";
+import { setShowToast } from "../../Redux/AppReducers";
+import { AppStrings, Empty_Screen_Type } from "../../Utils/AppStrings";
+import OfflineIcon from "../Svg/OfflineIcon";
+import LinearGradient from "react-native-linear-gradient";
 import {
   capitalizeEachWord,
   getErrorMessage,
   getStatusColor,
-} from '../../Utils/Helper';
-import EmptyComp from '../Components/EmptyComp';
-import moment from 'moment';
-import SideFilterIcon from '../Svg/SideFilterIcon';
-import {useDrawer} from '../../Hooks/DrawerAnimation';
-import {CompanyListComp} from './Components/ParkingCompanyComp';
+} from "../../Utils/Helper";
+import EmptyComp from "../Components/EmptyComp";
+import moment from "moment";
+import SideFilterIcon from "../Svg/SideFilterIcon";
+import { useDrawer } from "../../Hooks/DrawerAnimation";
+import { CompanyListComp } from "./Components/ParkingCompanyComp";
+import { useFocusRefresh } from "../../Network/Services/FocusRefresh";
 
-const Comp = ({item, onPress, type}: any) => {
+const Comp = ({ item, onPress, type }: any) => {
   const colors = useSelector(
     (state: AppRootStore) => state.SliceReducer.themeColors,
   );
   const styles = useMemo(
-    () => ({...makeStyles(colors), ...AppStyles(colors)}),
+    () => ({ ...makeStyles(colors), ...AppStyles(colors) }),
     [colors],
   );
 
@@ -62,7 +63,8 @@ const Comp = ({item, onPress, type}: any) => {
     <TouchableOpacity
       activeOpacity={1}
       onPress={onPress}
-      style={styles.itemCont}>
+      style={styles.itemCont}
+    >
       <View style={styles.rowCont}>
         <Text style={styles.nameTxt}>{item?.formId ?? item?.sessionId}</Text>
       </View>
@@ -84,9 +86,10 @@ const Comp = ({item, onPress, type}: any) => {
                   item?.formStatus ?? item?.status,
                   colors,
                 ),
-                alignSelf: 'flex-start',
+                alignSelf: "flex-start",
               },
-            ]}>
+            ]}
+          >
             <Text style={styles.statusTxt}>
               {capitalizeEachWord(item?.formStatus ?? item?.status)}
             </Text>
@@ -102,9 +105,10 @@ const Comp = ({item, onPress, type}: any) => {
               styles.statusCont,
               {
                 backgroundColor: getStatusColor(item?.paymentStatus, colors),
-                alignSelf: 'flex-start',
+                alignSelf: "flex-start",
               },
-            ]}>
+            ]}
+          >
             <Text style={styles.statusTxt}>
               {capitalizeEachWord(item?.paymentStatus)}
             </Text>
@@ -112,7 +116,7 @@ const Comp = ({item, onPress, type}: any) => {
         </View>
         <View style={styles.item}>
           <Text style={styles.keyTxt}>
-            {type === 'Permits' ? 'Permit Type' : 'Booking Type'}
+            {type === "Permits" ? "Permit Type" : "Booking Type"}
           </Text>
           <Text style={styles.valueTxt}>
             {capitalizeEachWord(item?.permitType?.type ?? item?.bookingType)}
@@ -128,7 +132,7 @@ const Comp = ({item, onPress, type}: any) => {
         <View style={styles.item}>
           <Text style={styles.keyTxt}>Building Name</Text>
           <Text style={styles.valueTxt}>
-            {item?.parkingSite?.buildingName ?? item?.siteName ?? 'N/A'}
+            {item?.parkingSite?.buildingName ?? item?.siteName ?? "N/A"}
           </Text>
         </View>
       </View>
@@ -138,22 +142,22 @@ const Comp = ({item, onPress, type}: any) => {
           <Text style={styles.keyTxt}>Created At</Text>
           <Text style={styles.valueTxt}>
             {item?.createdAt
-              ? moment(item.createdAt).format('MMM DD, YYYY')
-              : 'N/A'}
+              ? moment(item.createdAt).format("MMM DD, YYYY")
+              : "N/A"}
           </Text>
         </View>
-        {type === 'Permits' ? (
+        {type === "Permits" ? (
           <View style={styles.item}>
             <Text style={styles.keyTxt}>Permit ID</Text>
-            <Text style={styles.valueTxt}>{item?.permitId ?? 'N/A'}</Text>
+            <Text style={styles.valueTxt}>{item?.permitId ?? "N/A"}</Text>
           </View>
         ) : (
           <View style={styles.item}>
             <Text style={styles.keyTxt}>Start Time</Text>
             <Text style={styles.valueTxt}>
               {item?.startTime
-                ? moment(item.startTime).format('MMM DD, YYYY, h:mm A')
-                : 'N/A'}
+                ? moment(item.startTime).format("MMM DD, YYYY, h:mm A")
+                : "N/A"}
             </Text>
           </View>
         )}
@@ -167,12 +171,12 @@ const ParkingPermitScreen = (props: ScreenProps) => {
   const selector = useSelector((state: AppRootStore) => state.SliceReducer);
   const colors = selector.themeColors;
   const styles = useMemo(
-    () => ({...makeStyles(colors), ...AppStyles(colors)}),
+    () => ({ ...makeStyles(colors), ...AppStyles(colors) }),
     [colors],
   );
   const dispatch = useDispatch();
   const isOnline = selector?.isNetConnected;
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
   const [sortIndex, setSortIndex] = useState<any>(null);
   const [list, setList] = useState<any>([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -182,34 +186,34 @@ const ParkingPermitScreen = (props: ScreenProps) => {
   const [refreshing, setRefreshing] = useState(false);
   const isCompany = props?.route?.params?.isCompany ?? false;
 
-  console.log(type, 'parking permit type');
+  // console.log(type, "parking permit type");
 
   const [queryParams, setQueryparams] = useState({});
 
-  const {isDrawerOpen, drawerAnim, overlayAnim, openDrawer, closeDrawer} =
+  const { isDrawerOpen, drawerAnim, overlayAnim, openDrawer, closeDrawer } =
     useDrawer();
 
-  useEffect(() => {
-    getRequests();
-  }, [page, search, queryParams]);
+  // useEffect(() => {
+  //   getRequests();
+  // }, [page, search, queryParams]);
 
-  const getRequests = () => {
-    page === 1 && setIsLoading(true);
+  const getRequests = (opts?: { silent?: boolean }) => {
+    page === 1 && !opts?.silent && setIsLoading(true);
     apiHandler({
       endpoint: isCompany
         ? ENDPOINTS.allParkingCompany
-        : type === 'Permits'
+        : type === "Permits"
         ? ENDPOINTS.allParkingPermit
         : ENDPOINTS.allParkingSession,
-      method: 'GET',
+      method: "GET",
       queryParams: {
         page,
         pageSize: 10,
         query: search,
-        sort: sortingList[sortIndex]?.key ?? '',
+        sort: sortingList[sortIndex]?.key ?? "",
         ...queryParams,
       },
-      authContext: 'RESIDENT',
+      authContext: "RESIDENT",
       onComplete: (resp: any) => {
         setRefreshing(false);
         if (resp?.status) {
@@ -242,7 +246,7 @@ const ParkingPermitScreen = (props: ScreenProps) => {
       },
     });
   };
-
+  useFocusRefresh(getRequests, [page, search, queryParams]);
   const onRefresh = () => {
     setRefreshing(true);
     if (page !== 1) {
@@ -257,22 +261,23 @@ const ParkingPermitScreen = (props: ScreenProps) => {
       style={[
         styles.container,
         {
-          paddingTop: insects.top - normalized(Platform.OS == 'ios' ? 15 : 0),
-          paddingBottom: Platform.OS == 'android' ? insects.bottom : 0,
+          paddingTop: insects.top - normalized(Platform.OS == "ios" ? 15 : 0),
+          paddingBottom: Platform.OS == "android" ? insects.bottom : 0,
         },
-      ]}>
+      ]}
+    >
       <StatusBar
-        barStyle={selector?.isDarkTheme ? 'light-content' : 'dark-content'}
+        barStyle={selector?.isDarkTheme ? "light-content" : "dark-content"}
       />
 
       <CustomHeader
         onBackPress={() => props?.navigation?.goBack()}
         text={
           isCompany
-            ? 'Parking Company'
-            : type === 'Permits'
-            ? 'Parking Permit Requests'
-            : 'Parking Session Requests'
+            ? "Parking Company"
+            : type === "Permits"
+            ? "Parking Permit Requests"
+            : "Parking Session Requests"
         }
       />
 
@@ -289,7 +294,8 @@ const ParkingPermitScreen = (props: ScreenProps) => {
         contentContainerStyle={{
           paddingHorizontal: normalized(20),
           paddingBottom: normalized(30),
-        }}>
+        }}
+      >
         {/* <View style={[styles.row, {marginTop: normalized(12)}]}>
           <Text style={styles.headTxt}>Requests</Text>
           <LinearGradient
@@ -310,20 +316,22 @@ const ParkingPermitScreen = (props: ScreenProps) => {
         <View
           style={[
             styles.row,
-            {marginTop: normalized(12), gap: normalized(10)},
-          ]}>
-          <View style={{flex: 1}}>
+            { marginTop: normalized(12), gap: normalized(10) },
+          ]}
+        >
+          <View style={{ flex: 1 }}>
             <CustomInput
               value={search}
               setValue={setSearch}
-              placeholder={'Search'}
+              placeholder={"Search"}
               placeholderColor={colors.Heading_Txt}
             />
           </View>
 
           <LinearGradient
             colors={[colors.Primary, colors.Secondary]}
-            style={styles.sidePanelCont}>
+            style={styles.sidePanelCont}
+          >
             <TouchableOpacity activeOpacity={1} onPress={openDrawer}>
               <SideFilterIcon />
             </TouchableOpacity>
@@ -343,7 +351,7 @@ const ParkingPermitScreen = (props: ScreenProps) => {
               gap: normalized(12),
             }}
             showsVerticalScrollIndicator={false}
-            renderItem={({item}) =>
+            renderItem={({ item }) =>
               isCompany ? (
                 <CompanyListComp
                   item={item}
@@ -370,7 +378,7 @@ const ParkingPermitScreen = (props: ScreenProps) => {
                   item={item}
                   type={type}
                   onPress={() => {
-                    if (type === 'Permits') {
+                    if (type === "Permits") {
                       props?.navigation?.navigate(
                         Routes.ParkingPermit.ReqDetail,
                         {
@@ -406,17 +414,18 @@ const ParkingPermitScreen = (props: ScreenProps) => {
                   style={{
                     height: normalized(20),
                     marginTop: normalized(12),
-                  }}>
+                  }}
+                >
                   <ActivityIndicator size="large" color={colors.Primary} />
                 </View>
               ) : (
-                <View style={{height: normalized(10)}} />
+                <View style={{ height: normalized(10) }} />
               )
             }
             onEndReachedThreshold={0.2}
             onEndReached={() => {
               if (!isLoading && list.length < totalItems) {
-                setPage(prev => prev + 1);
+                setPage((prev) => prev + 1);
               }
             }}
           />
@@ -430,7 +439,7 @@ const ParkingPermitScreen = (props: ScreenProps) => {
         hideSearchBar={true}
         hidePaymentStatus={true}
         onClose={closeDrawer}
-        topOffset={insects.top + normalized(Platform.OS == 'ios' ? 36 : 52)}
+        topOffset={insects.top + normalized(Platform.OS == "ios" ? 36 : 52)}
         closeDrawer={closeDrawer}
         onApply={(queryString: any, params: any) => {
           setQueryparams(params);
@@ -450,15 +459,15 @@ const makeStyles = (colors: any) =>
       backgroundColor: colors.Background,
     },
     dropdownList: {
-      position: 'absolute',
+      position: "absolute",
       zIndex: 99,
       top: normalized(45),
-      width: '100%',
+      width: "100%",
     },
     loaderCont: {
       minHeight: ScreenSize.height / 1.4,
-      alignItems: 'center',
-      justifyContent: 'center',
+      alignItems: "center",
+      justifyContent: "center",
     },
     headTxt: {
       fontSize: normalized(20),
@@ -469,12 +478,12 @@ const makeStyles = (colors: any) =>
       width: normalized(30),
       height: normalized(30),
       borderRadius: normalized(30),
-      alignItems: 'center',
-      justifyContent: 'center',
+      alignItems: "center",
+      justifyContent: "center",
     },
     emptyCont: {
       minHeight: ScreenSize.height / 2,
-      alignItems: 'center',
-      justifyContent: 'center',
+      alignItems: "center",
+      justifyContent: "center",
     },
   });

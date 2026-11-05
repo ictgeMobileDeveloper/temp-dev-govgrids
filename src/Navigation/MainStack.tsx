@@ -1,118 +1,119 @@
-import React from 'react';
+import React from "react";
 import {
   createStackNavigator,
   CardStyleInterpolators,
-} from '@react-navigation/stack';
-import {Routes} from '../Utils/Routes';
-import LoginScreen from '../UI/Auth/LoginScreen';
-import SignupScreen from '../UI/Auth/SignupScreen';
-import MainScreen from '../UI/Auth/MainScreen';
-import StaffHomeScreen from '../UI/Staff/StaffHomeScreen';
-import OtpScreen from '../UI/Auth/OtpScreen';
-import ResidentHomeScreen from '../UI/Resident/ResidentHomeScreen';
-import FOIARequestScreen from '../UI/FOIA/FOIARequestScreen';
-import FOIANewReqScreen from '../UI/FOIA/FOIANewReqScreen';
-import WalkInNewReqScreen from '../UI/FOIA/WalkInNewReqScreen';
-import WalkInReqDetailScreen from '../UI/FOIA/WalkInReqDetailScreen';
-import PropertyScreen from '../UI/ProperSalesLookup/PropertyScreen';
-import PropertyDetailScreen from '../UI/ProperSalesLookup/PropertyDetailScreen';
-import ParkingPermitFormScreen from '../UI/ParkingPermit/ParkingPermitFormStack/ParkingPermitFormScreen';
-import ParkingPermitScreen from '../UI/ParkingPermit/ParkingPermitScreen';
-import PoliceDutyScreen from '../UI/BillingInv/Screens/PoliceDutyScreen';
-import FOIAReqDetailScreen from '../UI/FOIA/FOIAReqDetailScreen';
-import InvoiceScreen from '../UI/BillingInv/Screens/InvoiceScreen';
-import AutismSafetyScreen from '../UI/Sections/Autism/AutismSafetyScreen';
-import MapScreen from '../UI/Map/MapScreen';
-import RIPHomeScreen from '../UI/ResidentIssuePortal/RIPHomeScreen';
-import RIPSubmitReqScreen from '../UI/ResidentIssuePortal/RIPSubmitReqScreen';
-import RIPReqDetailScreen from '../UI/ResidentIssuePortal/RIPReqDetailScreen';
-import EditProfileScreen from '../UI/Profile/EditProfileScreen';
-import TimeKeepingScreen from '../UI/TimeKeeping/TimeKeepingScreen';
-import TimeKeepingPortalScreen from '../UI/TimeKeeping/TimeKeepingPortalScreen';
-import TimeKeepingNewReqScreen from '../UI/TimeKeeping/TimeKeepingNewReqScreen';
-import TimeKeepingRequestsScreen from '../UI/TimeKeeping/TimeKeepingRequestsScreen';
-import TimeKeepingHoursScreen from '../UI/TimeKeeping/TimeKeepingHoursScreen';
-import SIRHomeScreen from '../UI/SIR/SIRHomeScreen';
-import SIRNewReqScreen from '../UI/SIR/SIRNewReqScreen';
-import CDRHomeScreen from '../UI/CDR/CDRHomeScreen';
-import CDRNewReqScreen from '../UI/CDR/CDRNewReqScreen';
-import CDRLoginScreen from '../UI/Auth/CDRLoginScreen';
-import SIRLoginScreen from '../UI/Auth/SIRLoginScreen';
-import TimeKeepingLoginScreen from '../UI/Auth/TimeKeepingLoginScreen';
-import CDROtpScreen from '../UI/Auth/CDROptScreen';
-import HelpDeskLoginScreen from '../UI/Auth/HelpDeskLoginScreen';
-import HelpDeskOtpScreen from '../UI/Auth/HelpDeskOtpScreen';
-import NotificationScreen from '../UI/Notification/NotificationScreen';
-import FlagRaisingHomeScreen from '../UI/FalgRaising/FlagRaisingHomeScreen';
-import ChangePasswordScreen from '../UI/Auth/ChangePasswordScreen';
-import FlagRaisingNewReqScreen from '../UI/FalgRaising/FlagRaisingNewReqScreen';
-import FlagRaisingReqDetailScreen from '../UI/FalgRaising/FlagRaisingReqDetailScreen';
-import RISMapScreen from '../UI/ResidentIssuePortal/RISMapScreen';
-import SIRReqDetailScreen from '../UI/SIR/SIRReqDetailScreen';
-import SIRProfileScreen from '../UI/SIR/SIRProfileScreen';
-import CDRReqDetailScreen from '../UI/CDR/CDRReqDetailScreen';
-import InvoiceDetailScreen from '../UI/BillingInv/Screens/ InvoiceDetailScreen';
-import ParkingPermitReqDetailScreen from '../UI/ParkingPermit/ParkingPermitReqDetailScreen';
-import PaymentScreen from '../UI/Payment/AddCardScreen';
-import StripePaymentScreen from '../UI/FOIA/StripePaymentScreen';
-import CartRentalHomeScreen from '../UI/CartRental/CartRentalHomeScreen';
-import CartRentalSubmitReq from '../UI/CartRental/CartRentalSubmitReq';
-import CartRentalDetailScreen from '../UI/CartRental/CartRentalDetailScreen';
-import DAMLoginScreen from '../UI/DAM/DAMLoginScreen';
-import DAMHomeScreen from '../UI/DAM/DAMHomeScreen';
-import DAMOtpScreen from '../UI/DAM/DAMOtpScreen';
-import JobDetailScreen from '../UI/DAM/JobDetailScreen';
-import TaskListScreen from '../UI/DAM/TaskListScreen';
-import TaskDetailScreen from '../UI/DAM/TaskDetailScreen';
-import VersionsScreen from '../UI/DAM/VersionsScreen';
-import ParkingPermitTermsNCondiScreen from '../UI/ParkingPermit/ParkingPermitFormStack/ParkingPermitTermsNCondiScreen';
-import ParkingPermitOfflineReqScreen from '../UI/ParkingPermit/ParkingPermitOfflineReqScreen';
-import ForgotPasswordScreen from '../UI/Auth/ForgotPasswordScreen';
-import TimeKeepingLedgerScreen from '../UI/TimeKeeping/TimeKeepingLedgerScreen';
-import FOIAOfflineReqScreen from '../UI/FOIA/FOIAOfflineReqScreen';
-import HelpDeskHomeScreen from '../UI/HelpDesk/Screens/HelpDeskHomeScreen';
-import SIROfflineReqScreen from '../UI/SIR/SIROfflineReqScreen';
-import CDROfflineReqScreen from '../UI/CDR/CDROfflineReqScreen';
-import AutismOfflineReqScreen from '../UI/Sections/Autism/AutismOfflineReqScreen';
-import TicketsScreen from '../UI/HelpDesk/Screens/TicketsScreen';
-import ApprovalScreen from '../UI/HelpDesk/Screens/ApprovalScreen';
-import ServiceScreen from '../UI/HelpDesk/Screens/ServiceScreen';
-import KnowledgeScreen from '../UI/HelpDesk/Screens/KnowledgeScreen';
-import KnowlegeArticleDetail from '../UI/HelpDesk/Screens/KnowlegeArticleDetail';
-import TicketDetailScreen from '../UI/HelpDesk/Screens/TicketDetailScreen';
-import CityHelpScreen from '../UI/HelpDesk/Screens/CityHelpScreen';
-import {useSelector} from 'react-redux';
-import {AppRootStore} from '../Redux/AppStore';
-import VoterWardScreen from '../UI/VoterWard/VoterWardScreen';
-import GeneralFormSubmissionScreen from '../UI/GenralForms/GeneralFormSubmission';
-import GenralFormScreen from '../UI/GenralForms/GenralFormScreen';
-import VenderHomeScreen from '../UI/Vendor/VenderHomeScreen';
-import BillingHomeScreen from '../UI/BillingInv/Screens/BillingHomeScreen';
-import SubmitJobScreen from '../UI/BillingInv/Screens/PoliceDutyForm';
-import BillingJobListing from '../UI/BillingInv/Screens/BillingJobListing';
-import BillingJobDetails from '../UI/BillingInv/Screens/BillingJobDetail';
-import BillingTypeScreen from '../UI/BillingInv/Screens/BillingType';
-import CartRentalDashboard from '../UI/CartRental/CartRentalDashboard';
-import CartRentalReportSubmission from '../UI/CartRental/CartRentalDRForm';
-import CartRentalReportDetail from '../UI/CartRental/CartRentalReportDetails';
-import DocumentsListScreen from '../UI/Components/DocumentListScreen';
-import SIROtpScreen from '../UI/Auth/SIROtpScreen';
-import SAMLCallbackScreen from '../UI/Auth/SAMLCallbackScreen';
-import SSOWebViewScreen from '../UI/Auth/SSOWebViewScreen';
-import EventHomeScreen from '../UI/Event/EventHomeScreen';
-import EventDetailsScreen from '../UI/Event/EventDetailScreen';
-import ParkingPermitDashboard from '../UI/ParkingPermit/ParkingPermitDashboard';
-import ParkingSitesScreen from '../UI/ParkingPermit/ParkingPermitSite';
-import PermitDetailScreen from '../UI/ParkingPermit/ParkingPermitFormStack/PermitDetails';
-import PPPersonalInfoScreen from '../UI/ParkingPermit/ParkingPermitFormStack/ParkingPersonalInfo';
-import PPSubmitReqScreen from '../UI/ParkingPermit/ParkingPermitRequestSubmit';
-import FlagRaisingTermsNCondiScreen from '../UI/FalgRaising/FlagRaisingTermsCond';
-import ParkingSessionDetailScreen from '../UI/ParkingPermit/ParkingSessionDetail';
-import ParkingPermitTypeScreen from '../UI/ParkingPermit/ParkingType';
-import ParkingPermitGuestSubmission from '../UI/ParkingPermit/ParkingPermitFormStack/ParkingPermitSubmission';
-import SettingsScreen from '../UI/Settings/SettingsScreen';
-import ContactUsScreen from '../UI/Settings/ContactUsScreen';
-import ParkingCompanyDetails from '../UI/ParkingPermit/ParkingCompanyDetails';
+} from "@react-navigation/stack";
+import { Routes } from "../Utils/Routes";
+import LoginScreen from "../UI/Auth/LoginScreen";
+import SignupScreen from "../UI/Auth/SignupScreen";
+import MainScreen from "../UI/Auth/MainScreen";
+import StaffHomeScreen from "../UI/Staff/StaffHomeScreen";
+import OtpScreen from "../UI/Auth/OtpScreen";
+import ResidentHomeScreen from "../UI/Resident/ResidentHomeScreen";
+import FOIARequestScreen from "../UI/FOIA/FOIARequestScreen";
+import FOIANewReqScreen from "../UI/FOIA/FOIANewReqScreen";
+import WalkInNewReqScreen from "../UI/FOIA/WalkInNewReqScreen";
+import WalkInReqDetailScreen from "../UI/FOIA/WalkInReqDetailScreen";
+import PropertyScreen from "../UI/ProperSalesLookup/PropertyScreen";
+import PropertyDetailScreen from "../UI/ProperSalesLookup/PropertyDetailScreen";
+import ParkingPermitFormScreen from "../UI/ParkingPermit/ParkingPermitFormStack/ParkingPermitFormScreen";
+import ParkingPermitScreen from "../UI/ParkingPermit/ParkingPermitScreen";
+import PoliceDutyScreen from "../UI/BillingInv/Screens/PoliceDutyScreen";
+import FOIAReqDetailScreen from "../UI/FOIA/FOIAReqDetailScreen";
+import InvoiceScreen from "../UI/BillingInv/Screens/InvoiceScreen";
+import AutismSafetyScreen from "../UI/Sections/Autism/AutismSafetyScreen";
+import MapScreen from "../UI/Map/MapScreen";
+import RIPHomeScreen from "../UI/ResidentIssuePortal/RIPHomeScreen";
+import RIPSubmitReqScreen from "../UI/ResidentIssuePortal/RIPSubmitReqScreen";
+import RIPReqDetailScreen from "../UI/ResidentIssuePortal/RIPReqDetailScreen";
+import EditProfileScreen from "../UI/Profile/EditProfileScreen";
+import TimeKeepingScreen from "../UI/TimeKeeping/TimeKeepingScreen";
+import TimeKeepingPortalScreen from "../UI/TimeKeeping/TimeKeepingPortalScreen";
+import TimeKeepingNewReqScreen from "../UI/TimeKeeping/TimeKeepingNewReqScreen";
+import TimeKeepingRequestsScreen from "../UI/TimeKeeping/TimeKeepingRequestsScreen";
+import TimeKeepingHoursScreen from "../UI/TimeKeeping/TimeKeepingHoursScreen";
+import SIRHomeScreen from "../UI/SIR/SIRHomeScreen";
+import SIRNewReqScreen from "../UI/SIR/SIRNewReqScreen";
+import CDRHomeScreen from "../UI/CDR/CDRHomeScreen";
+import CDRNewReqScreen from "../UI/CDR/CDRNewReqScreen";
+import CDRLoginScreen from "../UI/Auth/CDRLoginScreen";
+import SIRLoginScreen from "../UI/Auth/SIRLoginScreen";
+import TimeKeepingLoginScreen from "../UI/Auth/TimeKeepingLoginScreen";
+import CDROtpScreen from "../UI/Auth/CDROptScreen";
+import HelpDeskLoginScreen from "../UI/Auth/HelpDeskLoginScreen";
+import HelpDeskOtpScreen from "../UI/Auth/HelpDeskOtpScreen";
+import NotificationScreen from "../UI/Notification/NotificationScreen";
+import FlagRaisingHomeScreen from "../UI/FalgRaising/FlagRaisingHomeScreen";
+import ChangePasswordScreen from "../UI/Auth/ChangePasswordScreen";
+import FlagRaisingNewReqScreen from "../UI/FalgRaising/FlagRaisingNewReqScreen";
+import FlagRaisingReqDetailScreen from "../UI/FalgRaising/FlagRaisingReqDetailScreen";
+import RISMapScreen from "../UI/ResidentIssuePortal/RISMapScreen";
+import SIRReqDetailScreen from "../UI/SIR/SIRReqDetailScreen";
+import SIRProfileScreen from "../UI/SIR/SIRProfileScreen";
+import CDRReqDetailScreen from "../UI/CDR/CDRReqDetailScreen";
+import InvoiceDetailScreen from "../UI/BillingInv/Screens/ InvoiceDetailScreen";
+import ParkingPermitReqDetailScreen from "../UI/ParkingPermit/ParkingPermitReqDetailScreen";
+import PaymentScreen from "../UI/Payment/AddCardScreen";
+import StripePaymentScreen from "../UI/FOIA/StripePaymentScreen";
+import CartRentalHomeScreen from "../UI/CartRental/CartRentalHomeScreen";
+import CartRentalSubmitReq from "../UI/CartRental/CartRentalSubmitReq";
+import CartRentalDetailScreen from "../UI/CartRental/CartRentalDetailScreen";
+import DAMLoginScreen from "../UI/DAM/DAMLoginScreen";
+import DAMHomeScreen from "../UI/DAM/DAMHomeScreen";
+import DAMOtpScreen from "../UI/DAM/DAMOtpScreen";
+import JobDetailScreen from "../UI/DAM/JobDetailScreen";
+import TaskListScreen from "../UI/DAM/TaskListScreen";
+import TaskDetailScreen from "../UI/DAM/TaskDetailScreen";
+import VersionsScreen from "../UI/DAM/VersionsScreen";
+import ParkingPermitTermsNCondiScreen from "../UI/ParkingPermit/ParkingPermitFormStack/ParkingPermitTermsNCondiScreen";
+import ParkingPermitOfflineReqScreen from "../UI/ParkingPermit/ParkingPermitOfflineReqScreen";
+import ForgotPasswordScreen from "../UI/Auth/ForgotPasswordScreen";
+import TimeKeepingLedgerScreen from "../UI/TimeKeeping/TimeKeepingLedgerScreen";
+import FOIAOfflineReqScreen from "../UI/FOIA/FOIAOfflineReqScreen";
+import HelpDeskHomeScreen from "../UI/HelpDesk/Screens/HelpDeskHomeScreen";
+import SIROfflineReqScreen from "../UI/SIR/SIROfflineReqScreen";
+import CDROfflineReqScreen from "../UI/CDR/CDROfflineReqScreen";
+import AutismOfflineReqScreen from "../UI/Sections/Autism/AutismOfflineReqScreen";
+import TicketsScreen from "../UI/HelpDesk/Screens/TicketsScreen";
+import ApprovalScreen from "../UI/HelpDesk/Screens/ApprovalScreen";
+import ServiceScreen from "../UI/HelpDesk/Screens/ServiceScreen";
+import KnowledgeScreen from "../UI/HelpDesk/Screens/KnowledgeScreen";
+import KnowlegeArticleDetail from "../UI/HelpDesk/Screens/KnowlegeArticleDetail";
+import TicketDetailScreen from "../UI/HelpDesk/Screens/TicketDetailScreen";
+import CityHelpScreen from "../UI/HelpDesk/Screens/CityHelpScreen";
+import { useSelector } from "react-redux";
+import { AppRootStore } from "../Redux/AppStore";
+import VoterWardScreen from "../UI/VoterWard/VoterWardScreen";
+import GeneralFormSubmissionScreen from "../UI/GenralForms/GeneralFormSubmission";
+import GenralFormScreen from "../UI/GenralForms/GenralFormScreen";
+import VenderHomeScreen from "../UI/Vendor/VenderHomeScreen";
+import BillingHomeScreen from "../UI/BillingInv/Screens/BillingHomeScreen";
+import SubmitJobScreen from "../UI/BillingInv/Screens/PoliceDutyForm";
+import BillingJobListing from "../UI/BillingInv/Screens/BillingJobListing";
+import BillingJobDetails from "../UI/BillingInv/Screens/BillingJobDetail";
+import BillingTypeScreen from "../UI/BillingInv/Screens/BillingType";
+import CartRentalDashboard from "../UI/CartRental/CartRentalDashboard";
+import CartRentalReportSubmission from "../UI/CartRental/CartRentalDRForm";
+import CartRentalReportDetail from "../UI/CartRental/CartRentalReportDetails";
+import DocumentsListScreen from "../UI/Components/DocumentListScreen";
+import SIROtpScreen from "../UI/Auth/SIROtpScreen";
+import SAMLCallbackScreen from "../UI/Auth/SAMLCallbackScreen";
+import SSOWebViewScreen from "../UI/Auth/SSOWebViewScreen";
+import EventHomeScreen from "../UI/Event/EventHomeScreen";
+import EventDetailsScreen from "../UI/Event/EventDetailScreen";
+import ParkingPermitDashboard from "../UI/ParkingPermit/ParkingPermitDashboard";
+import ParkingSitesScreen from "../UI/ParkingPermit/ParkingPermitSite";
+import PermitDetailScreen from "../UI/ParkingPermit/ParkingPermitFormStack/PermitDetails";
+import PPPersonalInfoScreen from "../UI/ParkingPermit/ParkingPermitFormStack/ParkingPersonalInfo";
+import PPSubmitReqScreen from "../UI/ParkingPermit/ParkingPermitRequestSubmit";
+import FlagRaisingTermsNCondiScreen from "../UI/FalgRaising/FlagRaisingTermsCond";
+import ParkingSessionDetailScreen from "../UI/ParkingPermit/ParkingSessionDetail";
+import ParkingPermitTypeScreen from "../UI/ParkingPermit/ParkingType";
+import ParkingPermitGuestSubmission from "../UI/ParkingPermit/ParkingPermitFormStack/ParkingPermitSubmission";
+import SettingsScreen from "../UI/Settings/SettingsScreen";
+import ContactUsScreen from "../UI/Settings/ContactUsScreen";
+import ParkingCompanyDetails from "../UI/ParkingPermit/ParkingCompanyDetails";
+import ParkingPermitCompanyVehiclesScreen from "../UI/ParkingPermit/ParkingCompanyFormStack/CompanyVehicleScreen";
 const Stack = createStackNavigator();
 
 export const MainStack = () => {
@@ -125,11 +126,12 @@ export const MainStack = () => {
         // ✅ screenOptions goes here, on Navigator
         headerShown: false,
 
-        cardStyle: {backgroundColor: colors.Background},
+        cardStyle: { backgroundColor: colors.Background },
         cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
         gestureEnabled: true,
-        gestureDirection: 'horizontal',
-      }}>
+        gestureDirection: "horizontal",
+      }}
+    >
       <Stack.Screen
         name={Routes.MainScreen}
         component={MainScreen}
@@ -219,6 +221,10 @@ export const MainStack = () => {
       <Stack.Screen
         name={Routes.ParkingPermit.RequestSubmit}
         component={PPSubmitReqScreen}
+      />
+      <Stack.Screen
+        name={Routes.ParkingPermit.CompanyVehicle}
+        component={ParkingPermitCompanyVehiclesScreen}
       />
       <Stack.Screen
         name={Routes.PoliceDuty.BillingAccountScreen}

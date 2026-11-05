@@ -1,4 +1,4 @@
-import React, {useRef, useState, useCallback, useMemo} from 'react';
+import React, { useRef, useState, useCallback, useMemo } from "react";
 import {
   StyleSheet,
   View,
@@ -9,14 +9,15 @@ import {
   Pressable,
   Platform,
   useWindowDimensions,
-} from 'react-native';
-import SignatureCanvas from 'react-native-signature-canvas';
-import {useSelector} from 'react-redux';
-import {AppRootStore} from '../../Redux/AppStore';
-import {AppStyles} from '../../Utils/AppStyles';
-import {AppColors, normalized} from '../../Utils/AppConstants';
+} from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
+import SignatureCanvas from "react-native-signature-canvas";
+import { useSelector } from "react-redux";
+import { AppRootStore } from "../../Redux/AppStore";
+import { AppStyles } from "../../Utils/AppStyles";
+import { AppColors, normalized } from "../../Utils/AppConstants";
 
-const SignatureScreen = ({onSignatureAdded, isError}: any) => {
+const SignatureScreen = ({ onSignatureAdded, isError }: any) => {
   const [signature, setSignature] = useState(null);
   const [modalVisible, setModalVisible] = useState(false);
   const [readyToAdd, setReadyToAdd] = useState(false);
@@ -27,13 +28,14 @@ const SignatureScreen = ({onSignatureAdded, isError}: any) => {
     (state: AppRootStore) => state.SliceReducer.themeColors,
   );
   const styles = useMemo(
-    () => ({...makeStyles(colors), ...AppStyles(colors)}),
+    () => ({ ...makeStyles(colors), ...AppStyles(colors) }),
     [colors],
   );
 
-  const {width: winW, height: winH} = useWindowDimensions();
+  const { width: winW, height: winH } = useWindowDimensions();
   const isTab = Math.min(winW, winH) >= 600;
   const canvasHeight = isTab ? 400 : normalized(280);
+  const insets = useSafeAreaInsets();
 
   const handleSignatureOK = useCallback(
     (dataUrl: any) => {
@@ -41,7 +43,7 @@ const SignatureScreen = ({onSignatureAdded, isError}: any) => {
       setIsSaving(false);
       setReadyToAdd(false);
       setModalVisible(false);
-      if (typeof onSignatureAdded === 'function') {
+      if (typeof onSignatureAdded === "function") {
         onSignatureAdded(dataUrl);
       }
     },
@@ -73,7 +75,15 @@ const SignatureScreen = ({onSignatureAdded, isError}: any) => {
   };
 
   return (
-    <View style={styles.container}>
+    <View
+      style={[
+        styles.container,
+        {
+          marginBottom:
+            Platform.OS === "android" ? insets.bottom + normalized(10) : 0,
+        },
+      ]}
+    >
       <View
         style={[
           styles.preview,
@@ -81,12 +91,13 @@ const SignatureScreen = ({onSignatureAdded, isError}: any) => {
             backgroundColor: isError ? colors.redLight : colors.Background,
             borderColor: isError ? colors.ToastColors.Error : colors.Grey_2,
           },
-        ]}>
+        ]}
+      >
         {signature ? (
           <Image
             resizeMode="contain"
-            style={{width: 335, height: 114}}
-            source={{uri: signature}}
+            style={{ width: 335, height: 114 }}
+            source={{ uri: signature }}
           />
         ) : (
           <Text
@@ -95,7 +106,8 @@ const SignatureScreen = ({onSignatureAdded, isError}: any) => {
               {
                 color: isError ? colors.ToastColors.Error : colors.Desc_Txt,
               },
-            ]}>
+            ]}
+          >
             No signature yet
           </Text>
         )}
@@ -107,16 +119,18 @@ const SignatureScreen = ({onSignatureAdded, isError}: any) => {
           {
             backgroundColor: colors.Primary,
           },
-        ]}>
+        ]}
+      >
         <Text style={styles.openBtnText}>
-          {signature ? 'Update Signature' : 'Capture Signature'}
+          {signature ? "Update Signature" : "Capture Signature"}
         </Text>
       </TouchableOpacity>
       <Modal
         visible={modalVisible}
         animationType="slide"
         transparent
-        onRequestClose={() => setModalVisible(false)}>
+        onRequestClose={() => setModalVisible(false)}
+      >
         <View style={styles.modalBackdrop}>
           <View style={styles.modalCard}>
             <View style={styles.modalHeader}>
@@ -151,10 +165,16 @@ const SignatureScreen = ({onSignatureAdded, isError}: any) => {
               />
             </View>
 
-            <View style={styles.actionsRow}>
+            <View
+              style={[
+                styles.actionsRow,
+                { marginBottom: Platform.OS === "android" ? insets.bottom : 0 },
+              ]}
+            >
               <TouchableOpacity
                 onPress={handleClearInside}
-                style={[styles.actionBtn, styles.clearBtn]}>
+                style={[styles.actionBtn, styles.clearBtn]}
+              >
                 <Text style={styles.actionBtnText}>Clear</Text>
               </TouchableOpacity>
 
@@ -165,9 +185,10 @@ const SignatureScreen = ({onSignatureAdded, isError}: any) => {
                   styles.actionBtn,
                   styles.addBtn,
                   (!readyToAdd || isSaving) && styles.disabledBtn,
-                ]}>
+                ]}
+              >
                 <Text style={styles.actionBtnText}>
-                  {isSaving ? 'Processing…' : 'Add Signature'}
+                  {isSaving ? "Processing…" : "Add Signature"}
                 </Text>
               </TouchableOpacity>
             </View>
@@ -182,18 +203,18 @@ const SignatureScreen = ({onSignatureAdded, isError}: any) => {
 const makeStyles = (colors: any) =>
   StyleSheet.create({
     container: {
-      width: '100%',
-      alignSelf: 'center',
-      alignItems: 'center',
+      width: "100%",
+      alignSelf: "center",
+      alignItems: "center",
     },
     preview: {
-      width: '100%',
+      width: "100%",
       height: normalized(140),
       borderWidth: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
+      justifyContent: "center",
+      alignItems: "center",
       borderRadius: normalized(12),
-      overflow: 'hidden',
+      overflow: "hidden",
     },
     placeholder: {
       color: AppColors.Grey_2,
@@ -205,56 +226,56 @@ const makeStyles = (colors: any) =>
       paddingVertical: normalized(12),
       paddingHorizontal: normalized(16),
       borderRadius: normalized(10),
-      alignSelf: 'flex-end',
+      alignSelf: "flex-end",
     },
     openBtnText: {
-      color: 'white',
-      fontWeight: '600',
+      color: "white",
+      fontWeight: "600",
     },
 
     // Modal styles
     modalBackdrop: {
       flex: 1,
-      backgroundColor: 'rgba(0,0,0,0.45)',
-      justifyContent: 'flex-end',
+      backgroundColor: "rgba(0,0,0,0.45)",
+      justifyContent: "flex-end",
     },
     modalCard: {
       backgroundColor: colors.Background,
       borderTopLeftRadius: normalized(16),
       borderTopRightRadius: normalized(16),
-      paddingBottom: Platform.select({ios: 24, android: 16}),
+      paddingBottom: Platform.select({ ios: 24, android: 16 }),
       paddingHorizontal: normalized(16),
       paddingTop: normalized(12),
     },
     modalHeader: {
-      flexDirection: 'row',
-      alignItems: 'center',
-      justifyContent: 'space-between',
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "space-between",
       marginBottom: normalized(8),
     },
     modalTitle: {
       color: colors.Heading_Txt,
       fontSize: normalized(16),
-      fontWeight: '600',
+      fontWeight: "600",
     },
     closeText: {
       fontSize: normalized(14),
       color: colors.Primary,
-      fontWeight: '600',
+      fontWeight: "600",
     },
     canvasWrap: {
       height: normalized(280),
       borderRadius: normalized(12),
-      overflow: 'hidden',
-      backgroundColor: 'white',
+      overflow: "hidden",
+      backgroundColor: "white",
       borderWidth: StyleSheet.hairlineWidth,
       borderColor: AppColors.Grey_2,
     },
     actionsRow: {
-      flexDirection: 'row',
+      flexDirection: "row",
       gap: 10,
       marginTop: 12,
-      justifyContent: 'flex-end',
+      justifyContent: "flex-end",
     },
     actionBtn: {
       paddingVertical: 10,
@@ -262,7 +283,7 @@ const makeStyles = (colors: any) =>
       borderRadius: 10,
     },
     clearBtn: {
-      backgroundColor: '#d00',
+      backgroundColor: "#d00",
     },
     addBtn: {
       backgroundColor: colors.Primary,
@@ -272,7 +293,7 @@ const makeStyles = (colors: any) =>
     },
     actionBtnText: {
       color: AppColors.White,
-      fontWeight: '700',
+      fontWeight: "700",
     },
   });
 
